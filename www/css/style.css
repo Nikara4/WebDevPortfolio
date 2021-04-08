@@ -10,15 +10,153 @@
     clear: both;
 }
 
+body {
+    font-family: 'Montserrat', arial, sans-serif;
+    /* ustalić ogólny rozmiar czcionki i reszta rem */
+}
+
 /* sekcja: header */
-header {}
+header {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    max-width: 1920px;
+    margin: 0 auto;
+    background-image: url('../img/headerphoto.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+header .welcome {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 0;
+    padding: 2vh 5vw 2vh 0;
+    background-color: #ACA18C;
+    height: 23vh;
+    width: 50vw;
+    text-align: left;
+    color: #F0EDDC;
+}
+
+h1,
+h2 {
+    font-weight: 100;
+    padding-left: 2vw;
+}
+
+h1 {
+    font-size: 85px;
+    border-bottom: 1px solid #F0EDDC;
+    padding-bottom: 0.5vh;
+}
+
+h2 {
+    font-size: 50px;
+    padding-top: 1vh;
+}
 
 /* sekcja menu */
-nav {}
+nav {
+    background-color: #ACA18C;
+    padding-left: 5%;
+    margin-bottom: 50px;
+    margin-top: 20px;
+}
+
+nav .menu {
+    list-style: none;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu li a {
+    display: block;
+    line-height: 40px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: #F0EDDC;
+    text-decoration: none;
+    padding: 0 40px;
+    font-size: 32px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    border-right: 1px solid #F0EDDC;
+}
+
+.menu li:nth-child(6) a {
+    border-style: none;
+}
+
+.menu li i {
+    padding-right: 10px;
+    font-size: 32px;
+    vertical-align: 0px;
+}
+
+.menu li a:hover {
+    color: #fff;
+}
 
 /* sekcja o mnie */
 
-section.profil {}
+section.profil {
+    position: relative;
+    max-width: 70vw;
+    min-height: 70vh;
+    margin: 0 auto;
+}
+
+.profil div {
+    position: absolute;
+    top: 4%;
+}
+
+.profil .img img {
+    width: 80%;
+    border: 5px solid #ACA18C;
+    padding: 10px;
+}
+
+.profil .about {
+    left: 39%;
+    max-width: 65%;
+}
+
+.about p {
+    font-size: 26px;
+    font-weight: 400;
+    color: #ACA18C;
+    text-align: justify;
+}
+
+.about button {
+    border: 3px solid #ACA18C;
+    background-color: transparent;
+    margin-top: 100px;
+}
+
+.about button a {
+    text-decoration: none;
+    font-size: 46px;
+    color: #ACA18C;
+    font-weight: 300;
+    font-family: 'Montserrat', arial, sans-serif;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.about button a:hover {
+    background-color: #ACA18C;
+    color: #F0EDDC;
+}
+
+
 
 /* sekcja umiejętności */
 
