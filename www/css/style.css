@@ -1,0 +1,41 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* sekcja: header */
+header {}
+
+/* sekcja menu */
+nav {}
+
+/* sekcja o mnie */
+
+section.profil {}
+
+/* sekcja umiejętności */
+
+section.skills {}
+
+/* sekcja projekty */
+
+section.projects {}
+
+/* sekcja hobby */
+
+section.hobby {}
+
+/* sekcja kontakt */
+
+section.contact {}
+
+/* footer  */
+
+footer {}
