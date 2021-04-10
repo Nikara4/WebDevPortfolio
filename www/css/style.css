@@ -40,19 +40,19 @@ header .welcome {
     color: #F0EDDC;
 }
 
-h1,
+header h1,
 h2 {
     font-weight: 100;
     padding-left: 2vw;
 }
 
-h1 {
+header h1 {
     font-size: 85px;
     border-bottom: 1px solid #F0EDDC;
     padding-bottom: 0.5vh;
 }
 
-h2 {
+header h2 {
     font-size: 50px;
     padding-top: 1vh;
 }
@@ -156,11 +156,79 @@ section.profil {
     color: #F0EDDC;
 }
 
-
-
 /* sekcja umiejętności */
 
-section.skills {}
+section.skills {
+    max-width: 1920px;
+    margin: 0 auto;
+    margin-bottom: 34px;
+    /* background-color: #F0EDDC; */
+}
+
+h1.title1 {
+    text-align: center;
+    margin: 0 37vw;
+    padding: 0;
+    padding-bottom: 2vh;
+    font-family: 'Montserrat', arial, sans-serif;
+    color: #ACA18C;
+    font-size: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 3px solid #ACA18C;
+}
+
+.skills .wrap {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.skills .skillMain {
+    float: left;
+    width: 33%;
+}
+
+h3.title {
+    text-align: center;
+    font-family: 'Montserrat', arial, sans-serif;
+    color: #567393;
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.skillMain i {
+    text-align: center;
+    color: #567393;
+    font-size: 220px;
+}
+
+.skillMain:nth-of-type(3) i {
+    line-height: 252px;
+}
+
+.skills h2 {
+    text-align: center;
+    color: #ACA18C;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0;
+    margin-bottom: 35px;
+}
+
+.wrap:nth-child(4) {
+    max-width: 70vw;
+}
+
+.skills .image {
+    float: left;
+    width: 33%;
+}
+
+.skills .image img {
+    width: 30%;
+}
 
 /* sekcja projekty */
 
