@@ -11,7 +11,7 @@
 }
 
 body {
-    font-family: 'Montserrat', arial, sans-serif;
+    font-family: 'Open Sans', arial, sans-serif;
     /* ustalić ogólny rozmiar czcionki i reszta rem */
 }
 
@@ -27,6 +27,7 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    font-family: 'Montserrat', arial, sans-serif;
 }
 
 header .welcome {
@@ -111,53 +112,78 @@ nav .menu {
 
 section.profil {
     position: relative;
-    max-width: 70vw;
+    max-width: 63vw;
     min-height: 70vh;
-    margin: 0 auto;
+    margin: 70px auto 0 auto;
+}
+
+h1.title1 {
+    text-align: center;
+    margin-left: 36%;
+    width: 25%;
+    padding-bottom: 1vh;
+    color: #ACA18C;
+    font-size: 48px;
+    font-weight: 400;
+    border-bottom: 2px solid #ACA18C;
 }
 
 .profil div {
     position: absolute;
-    top: 4%;
+    top: 19%;
+}
+
+.profil .img {
+    left: 58%;
 }
 
 .profil .img img {
-    width: 80%;
-    border: 5px solid #ACA18C;
-    padding: 10px;
+    width: 60%;
+    border: 14px solid #ACA18C;
+    border-radius: 50%;
 }
 
 .profil .about {
-    left: 39%;
-    max-width: 65%;
+    left: 5%;
+    max-width: 47%;
 }
 
 .about p {
-    font-size: 26px;
-    font-weight: 400;
+    font-size: 18px;
+    font-weight: 300;
     color: #ACA18C;
     text-align: justify;
 }
 
 .about button {
-    border: 3px solid #ACA18C;
-    background-color: transparent;
-    margin-top: 100px;
+    background-color: #ACA18C;
+    margin-top: 80px;
+    margin-left: 316px;
+    border: none;
+    border-radius: 1000px;
+    transition: 0.3s;
 }
 
 .about button a {
     text-decoration: none;
-    font-size: 46px;
-    color: #ACA18C;
+    font-size: 32px;
+    line-height: 46px;
     font-weight: 300;
+    color: #F0EDDC;
     font-family: 'Montserrat', arial, sans-serif;
     padding-left: 60px;
     padding-right: 60px;
 }
 
+.about button:hover {
+    transform: scale(1.075);
+    box-shadow: inset 0 0 0 2px #ACA18C;
+    background: none;
+    color: #ACA18C;
+}
+
 .about button a:hover {
-    background-color: #ACA18C;
-    color: #F0EDDC;
+    color: #ACA18C;
 }
 
 /* sekcja umiejętności */
@@ -167,19 +193,6 @@ section.skills {
     margin: 0 auto;
     margin-bottom: 34px;
     /* background-color: #F0EDDC; */
-}
-
-h1.title1 {
-    text-align: center;
-    margin: 0 37vw;
-    padding: 0;
-    padding-bottom: 2vh;
-    font-family: 'Montserrat', arial, sans-serif;
-    color: #ACA18C;
-    font-size: 48px;
-    font-weight: 700;
-    text-transform: uppercase;
-    border-bottom: 3px solid #ACA18C;
 }
 
 .skills .wrap {
@@ -194,7 +207,6 @@ h1.title1 {
 
 h3.title {
     text-align: center;
-    font-family: 'Montserrat', arial, sans-serif;
     color: #567393;
     font-size: 26px;
     font-weight: 700;
