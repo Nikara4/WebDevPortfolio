@@ -25,17 +25,19 @@ header {
     background-image: url('../img/headerphoto.jpg');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 header .welcome {
     position: absolute;
     z-index: 1;
-    top: 50%;
+    top: 47%;
     left: 0;
-    padding: 2vh 5vw 2vh 0;
+    padding: 1vh 5vw 2vh 0;
     background-color: #ACA18C;
-    height: 23vh;
-    width: 50vw;
+    height: 20vh;
+    width: 47vw;
     text-align: left;
     color: #F0EDDC;
 }
@@ -47,20 +49,23 @@ h2 {
 }
 
 header h1 {
-    font-size: 85px;
+    font-size: 75px;
     border-bottom: 1px solid #F0EDDC;
     padding-bottom: 0.5vh;
 }
 
 header h2 {
-    font-size: 50px;
+    font-size: 45px;
     padding-top: 1vh;
 }
 
 /* sekcja menu */
 nav {
+    position: absolute;
+    bottom: -2%;
+    width: 100%;
     background-color: #ACA18C;
-    padding-left: 5%;
+    padding-left: 16%;
     margin-bottom: 50px;
     margin-top: 20px;
 }
@@ -68,7 +73,6 @@ nav {
 nav .menu {
     list-style: none;
     max-width: 1920px;
-    margin: 0 auto;
 }
 
 .menu li {
@@ -77,13 +81,13 @@ nav .menu {
 
 .menu li a {
     display: block;
-    line-height: 40px;
+    line-height: 30px;
     margin-bottom: 15px;
     margin-top: 15px;
     color: #F0EDDC;
     text-decoration: none;
     padding: 0 40px;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 200;
     letter-spacing: 1px;
     border-right: 1px solid #F0EDDC;
@@ -95,7 +99,7 @@ nav .menu {
 
 .menu li i {
     padding-right: 10px;
-    font-size: 32px;
+    font-size: 24px;
     vertical-align: 0px;
 }
 
