@@ -192,12 +192,12 @@ section.skills {
     max-width: 1920px;
     margin: 0 auto;
     margin-bottom: 34px;
-    padding: 55px;
+    padding-top: 55px;
     background-color: #F1F0E7;
 }
 
-.skills .wrap {
-    margin: 49px auto;
+.wrap {
+    margin: 40px auto;
     text-align: center;
     max-width: 63vw;
 }
@@ -228,19 +228,17 @@ h3.title {
 .skills h2 {
     padding: 0;
     padding-bottom: 1vh;
-    margin-bottom: 35px;
-    margin-left: 41%;
+    margin-left: 42%;
     border-bottom: 1px solid #ACA18C;
     width: 16%;
     text-align: center;
     color: #ACA18C;
     font-size: 36px;
     font-weight: 300;
-
 }
 
 .wrap:nth-child(4) {
-    max-width: 70vw;
+    max-width: 58vw;
 }
 
 .skills .image {
@@ -249,20 +247,200 @@ h3.title {
 }
 
 .skills .image img {
-    width: 30%;
+    width: 29%;
+    margin-bottom: 27px;
 }
 
 /* sekcja projekty */
 
-section.projects {}
+section.projects {
+    margin: 0 auto;
+    padding-top: 15px;
+    margin-bottom: 100px;
+    max-width: 63vw;
+    text-align: center;
+}
+
+.projects .project {
+    float: left;
+    width: 33%;
+    margin-top: 70px;
+}
+
+.projects h3 {
+    margin-bottom: 20px;
+    font-family: 'Montserrat', arial, sans-serif;
+    font-weight: normal;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #ACA18C;
+}
+
+.project p {
+    padding: 0 30px 0 30px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #ACA18C;
+}
+
+.project img {
+    width: 70%;
+    margin-bottom: 50px;
+    transition: 0.3s;
+}
+
+.project img:hover {
+    transform: scale(1.075);
+}
 
 /* sekcja hobby */
 
-section.hobby {}
+section.hobby {
+    max-width: 1920px;
+    margin: 0 auto;
+    text-align: center;
+    color: #F0EDDC;
+}
+
+.hobby h1.hobbyTitle {
+    background-color: #ACA18C;
+    font-size: 48px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 70px;
+}
+
+.hobby .wrapHobby {
+    margin: 0 auto;
+}
+
+.hobby .item {
+    float: left;
+    width: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size: 100%;
+    transition: 0.7s;
+}
+
+.hobby .item:nth-of-type(1) {
+    background-image: url('../img/hobby1-b.jpg');
+}
+
+.hobby .item:nth-of-type(2) {
+    background-image: url('../img/hobby2.jpg');
+}
+
+.hobby .item:nth-of-type(3) {
+    background-image: url('../img/hobby3.jpg');
+}
+
+.hobby .item:nth-of-type(4) {
+    background-image: url('../img/hobby-plants3.jpg');
+}
+
+.item p {
+    text-align: center;
+    line-height: 32vh;
+    font-size: 36px;
+    transition: 0.7s;
+    opacity: 0;
+}
+
+.hobby .item:hover {
+    background-size: 130%;
+}
+
+.hobby .item p:hover {
+    opacity: 1;
+    background-color: rgba(86, 115, 147, 0.7);
+}
 
 /* sekcja kontakt */
 
-section.contact {}
+section.contact {
+    background-color: #47474A;
+    max-width: 1920px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+}
+
+.contact .wrap {
+    max-width: 63vw;
+    margin-left: 45vh;
+}
+
+.contact .title1:nth-of-type(1) {
+    padding-top: 55px;
+    margin-left: 31%;
+    width: 34%;
+    color: #F0EDDC;
+}
+
+.contact form,
+.socials {
+    float: left;
+    width: 50%;
+}
+
+.contact input,
+textarea {
+    width: 70%;
+    margin-bottom: 20px;
+    color: #47474A;
+    font-size: 15px;
+    padding: 10px 10px;
+    font-family: 'Open Sans', arial, sans-serif;
+}
+
+
+.contact input {
+    height: 45px;
+}
+
+.contact textarea {
+    height: 220px;
+}
+
+.contact button {
+    border: none;
+    border-radius: 1000px;
+    background-color: #ACA18C;
+    color: #F0EDDC;
+    font-family: 'Montserrat', arial, sans-serif;
+    line-height: 45px;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 0;
+    width: 70%;
+    transition: 0.3s;
+}
+
+.contact button:hover {
+    transform: scale(1.075);
+    box-shadow: inset 0 0 0 2px #F0EDDC;
+    background: none;
+    color: #F0EDDC;
+    cursor: pointer;
+}
+
+.contact .socials {
+    text-align: left;
+    color: #F0EDDC;
+    font-size: 27px;
+    line-height: 71px;
+}
+
+.contact .social i {
+    float: left;
+    font-size: 38px;
+    line-height: 71px;
+}
+
+.contact .social span {
+    padding-left: 25px;
+}
 
 /* footer  */
 
