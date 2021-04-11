@@ -113,24 +113,24 @@ nav .menu {
 section.profil {
     position: relative;
     max-width: 63vw;
-    min-height: 70vh;
+    min-height: 54vh;
     margin: 70px auto 0 auto;
 }
 
 h1.title1 {
     text-align: center;
-    margin-left: 36%;
+    margin-left: 37%;
     width: 25%;
     padding-bottom: 1vh;
+    border-bottom: 2px solid #ACA18C;
     color: #ACA18C;
     font-size: 48px;
     font-weight: 400;
-    border-bottom: 2px solid #ACA18C;
 }
 
 .profil div {
     position: absolute;
-    top: 19%;
+    top: 20%;
 }
 
 .profil .img {
@@ -192,12 +192,14 @@ section.skills {
     max-width: 1920px;
     margin: 0 auto;
     margin-bottom: 34px;
-    /* background-color: #F0EDDC; */
+    padding: 55px;
+    background-color: #F1F0E7;
 }
 
 .skills .wrap {
-    margin: 30px auto;
+    margin: 49px auto;
     text-align: center;
+    max-width: 63vw;
 }
 
 .skills .skillMain {
@@ -208,7 +210,7 @@ section.skills {
 h3.title {
     text-align: center;
     color: #567393;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -216,21 +218,25 @@ h3.title {
 .skillMain i {
     text-align: center;
     color: #567393;
-    font-size: 220px;
+    font-size: 180px;
 }
 
 .skillMain:nth-of-type(3) i {
-    line-height: 252px;
+    line-height: 233px;
 }
 
 .skills h2 {
+    padding: 0;
+    padding-bottom: 1vh;
+    margin-bottom: 35px;
+    margin-left: 41%;
+    border-bottom: 1px solid #ACA18C;
+    width: 16%;
     text-align: center;
     color: #ACA18C;
     font-size: 36px;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding: 0;
-    margin-bottom: 35px;
+    font-weight: 300;
+
 }
 
 .wrap:nth-child(4) {
