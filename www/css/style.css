@@ -192,14 +192,14 @@ section.skills {
     max-width: 1920px;
     margin: 0 auto;
     margin-bottom: 34px;
-    padding-top: 55px;
+    padding-top: 30px;
     background-color: #F1F0E7;
 }
 
 .wrap {
-    margin: 40px auto;
+    margin: 27px auto;
     text-align: center;
-    max-width: 63vw;
+    max-width: 56vw;
 }
 
 .skills .skillMain {
@@ -237,8 +237,9 @@ h3.title {
     font-weight: 300;
 }
 
-.wrap:nth-child(4) {
-    max-width: 58vw;
+.wrap:nth-child(3) {
+    max-width: 50vw;
+    margin-bottom: 0;
 }
 
 .skills .image {
@@ -247,8 +248,13 @@ h3.title {
 }
 
 .skills .image img {
-    width: 29%;
-    margin-bottom: 27px;
+    width: 30%;
+    margin-bottom: 15px;
+}
+
+.image:last-child {
+    float: none;
+    margin: 0 auto;
 }
 
 /* sekcja projekty */
@@ -306,7 +312,6 @@ section.hobby {
     background-color: #ACA18C;
     font-size: 48px;
     font-weight: 400;
-    text-transform: uppercase;
     line-height: 70px;
 }
 
@@ -428,13 +433,13 @@ textarea {
 .contact .socials {
     text-align: left;
     color: #F0EDDC;
-    font-size: 27px;
+    font-size: 22px;
     line-height: 71px;
 }
 
 .contact .social i {
     float: left;
-    font-size: 38px;
+    font-size: 32px;
     line-height: 71px;
 }
 
@@ -444,4 +449,34 @@ textarea {
 
 /* footer  */
 
-footer {}
+footer {
+    background-color: #47474A;
+    max-width: 1920px;
+    margin: 0 auto;
+    text-align: center;
+    color: #F0EDDC;
+    font-weight: 300;
+    line-height: 25px;
+    padding-bottom: 20px;
+}
+
+footer h3 {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+footer a {
+    text-align: center;
+    color: #ACA18C;
+    font-size: 12px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #F0EDDC;
+}
