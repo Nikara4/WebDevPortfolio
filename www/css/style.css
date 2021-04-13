@@ -12,7 +12,7 @@
 
 body {
     font-family: 'Open Sans', arial, sans-serif;
-    /* ustalić ogólny rozmiar czcionki i reszta rem */
+    font-size: 10px;
 }
 
 /* sekcja: header */
@@ -50,13 +50,13 @@ h2 {
 }
 
 header h1 {
-    font-size: 75px;
+    font-size: 7.5em;
     border-bottom: 1px solid #F0EDDC;
     padding-bottom: 0.5vh;
 }
 
 header h2 {
-    font-size: 45px;
+    font-size: 4.5em;
     padding-top: 1vh;
 }
 
@@ -67,8 +67,7 @@ nav {
     width: 100%;
     background-color: #ACA18C;
     padding-left: 16%;
-    margin-bottom: 50px;
-    margin-top: 20px;
+    margin-bottom: 5vh;
 }
 
 nav .menu {
@@ -82,13 +81,12 @@ nav .menu {
 
 .menu li a {
     display: block;
-    line-height: 30px;
-    margin-bottom: 15px;
-    margin-top: 15px;
+    margin-bottom: 1.5vh;
+    margin-top: 1.5vh;
     color: #F0EDDC;
     text-decoration: none;
     padding: 0 40px;
-    font-size: 24px;
+    font-size: 2.4em;
     font-weight: 200;
     letter-spacing: 1px;
     border-right: 1px solid #F0EDDC;
@@ -100,7 +98,6 @@ nav .menu {
 
 .menu li i {
     padding-right: 10px;
-    font-size: 24px;
     vertical-align: 0px;
 }
 
@@ -110,11 +107,12 @@ nav .menu {
 
 /* sekcja o mnie */
 
+
 section.profil {
     position: relative;
     max-width: 63vw;
     min-height: 54vh;
-    margin: 70px auto 0 auto;
+    margin: 3vw auto 0 auto;
 }
 
 h1.title1 {
@@ -124,7 +122,7 @@ h1.title1 {
     padding-bottom: 1vh;
     border-bottom: 2px solid #ACA18C;
     color: #ACA18C;
-    font-size: 48px;
+    font-size: 4.8em;
     font-weight: 400;
 }
 
@@ -149,7 +147,7 @@ h1.title1 {
 }
 
 .about p {
-    font-size: 18px;
+    font-size: 1.8em;
     font-weight: 300;
     color: #ACA18C;
     text-align: justify;
@@ -157,8 +155,8 @@ h1.title1 {
 
 .about button {
     background-color: #ACA18C;
-    margin-top: 80px;
-    margin-left: 316px;
+    margin-top: 8vh;
+    margin-left: 16vw;
     border: none;
     border-radius: 1000px;
     transition: 0.3s;
@@ -166,13 +164,13 @@ h1.title1 {
 
 .about button a {
     text-decoration: none;
-    font-size: 32px;
-    line-height: 46px;
+    font-size: 2.4em;
+    line-height: 5vh;
     font-weight: 300;
     color: #F0EDDC;
     font-family: 'Montserrat', arial, sans-serif;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 3vw;
+    padding-right: 3vw;
 }
 
 .about button:hover {
@@ -191,13 +189,13 @@ h1.title1 {
 section.skills {
     max-width: 1920px;
     margin: 0 auto;
-    margin-bottom: 34px;
-    padding-top: 30px;
+    margin-bottom: 3.5vh;
+    padding-top: 3.5vh;
     background-color: #F1F0E7;
 }
 
 .wrap {
-    margin: 27px auto;
+    margin: 3vh auto;
     text-align: center;
     max-width: 56vw;
 }
@@ -210,7 +208,7 @@ section.skills {
 h3.title {
     text-align: center;
     color: #567393;
-    font-size: 24px;
+    font-size: 2.4em;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -218,23 +216,11 @@ h3.title {
 .skillMain i {
     text-align: center;
     color: #567393;
-    font-size: 180px;
+    font-size: 18em;
 }
 
 .skillMain:nth-of-type(3) i {
     line-height: 233px;
-}
-
-.skills h2 {
-    padding: 0;
-    padding-bottom: 1vh;
-    margin-left: 42%;
-    border-bottom: 1px solid #ACA18C;
-    width: 16%;
-    text-align: center;
-    color: #ACA18C;
-    font-size: 36px;
-    font-weight: 300;
 }
 
 .wrap:nth-child(3) {
@@ -249,7 +235,7 @@ h3.title {
 
 .skills .image img {
     width: 30%;
-    margin-bottom: 15px;
+    margin-bottom: 1vh;
 }
 
 .image:last-child {
@@ -261,8 +247,8 @@ h3.title {
 
 section.projects {
     margin: 0 auto;
-    padding-top: 15px;
-    margin-bottom: 100px;
+    padding-top: 1vh;
+    margin-bottom: 10vh;
     max-width: 63vw;
     text-align: center;
 }
@@ -270,33 +256,34 @@ section.projects {
 .projects .project {
     float: left;
     width: 33%;
-    margin-top: 70px;
+    margin-top: 8vh;
 }
 
 .projects h3 {
-    margin-bottom: 20px;
+    margin-bottom: 3vh;
     font-family: 'Montserrat', arial, sans-serif;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 2.4em;
     text-transform: uppercase;
     color: #ACA18C;
 }
 
 .project p {
-    padding: 0 30px 0 30px;
-    font-size: 16px;
+    padding: 0 2vw 0 2vw;
+    font-size: 1.6em;
     font-weight: 300;
     color: #ACA18C;
 }
 
 .project img {
     width: 70%;
-    margin-bottom: 50px;
+    margin-bottom: 6vh;
     transition: 0.3s;
 }
 
 .project img:hover {
     transform: scale(1.075);
+    cursor: pointer;
 }
 
 /* sekcja hobby */
@@ -310,9 +297,9 @@ section.hobby {
 
 .hobby h1.hobbyTitle {
     background-color: #ACA18C;
-    font-size: 48px;
+    font-size: 4.8em;
     font-weight: 400;
-    line-height: 70px;
+    line-height: 7.5vh;
 }
 
 .hobby .wrapHobby {
@@ -348,7 +335,7 @@ section.hobby {
 .item p {
     text-align: center;
     line-height: 32vh;
-    font-size: 36px;
+    font-size: 3.6em;
     transition: 0.7s;
     opacity: 0;
 }
@@ -367,7 +354,7 @@ section.hobby {
 section.contact {
     background-color: #47474A;
     max-width: 1920px;
-    padding-bottom: 20px;
+    padding-bottom: 2vh;
     margin: 0 auto;
 }
 
@@ -377,7 +364,7 @@ section.contact {
 }
 
 .contact .title1:nth-of-type(1) {
-    padding-top: 55px;
+    padding-top: 6vh;
     margin-left: 31%;
     width: 34%;
     color: #F0EDDC;
@@ -392,20 +379,20 @@ section.contact {
 .contact input,
 textarea {
     width: 70%;
-    margin-bottom: 20px;
+    margin-bottom: 2vh;
     color: #47474A;
-    font-size: 15px;
-    padding: 10px 10px;
+    font-size: 1.5em;
+    padding: 0.7vw;
     font-family: 'Open Sans', arial, sans-serif;
 }
 
 
 .contact input {
-    height: 45px;
+    height: 5vh;
 }
 
 .contact textarea {
-    height: 220px;
+    height: 23vh;
 }
 
 .contact button {
@@ -414,8 +401,8 @@ textarea {
     background-color: #ACA18C;
     color: #F0EDDC;
     font-family: 'Montserrat', arial, sans-serif;
-    line-height: 45px;
-    font-size: 24px;
+    line-height: 5vh;
+    font-size: 2.4em;
     text-transform: uppercase;
     padding: 0;
     width: 70%;
@@ -433,18 +420,18 @@ textarea {
 .contact .socials {
     text-align: left;
     color: #F0EDDC;
-    font-size: 22px;
+    font-size: 2.2em;
     line-height: 71px;
 }
 
 .contact .social i {
     float: left;
-    font-size: 32px;
-    line-height: 71px;
+    font-size: 1.5em;
+    line-height: 7.5vh;
 }
 
 .contact .social span {
-    padding-left: 25px;
+    padding-left: 1.4vw;
 }
 
 /* footer  */
@@ -461,18 +448,18 @@ footer {
 }
 
 footer h3 {
-    font-size: 18px;
+    font-size: 1.8em;
     font-weight: 300;
 }
 
 footer p {
-    font-size: 12px;
+    font-size: 1.2em;
 }
 
 footer a {
     text-align: center;
     color: #ACA18C;
-    font-size: 12px;
+    font-size: 1.2em;
     font-weight: 300;
     text-decoration: none;
 }
