@@ -50,7 +50,7 @@ h2 {
 }
 
 header h1 {
-    font-size: 7.5em;
+    font-size: 8vh;
     border-bottom: 1px solid #F0EDDC;
     padding-bottom: 0.5vh;
 }
@@ -66,13 +66,13 @@ nav {
     bottom: -2%;
     width: 100%;
     background-color: #ACA18C;
-    padding-left: 16%;
     margin-bottom: 5vh;
 }
 
 nav .menu {
     list-style: none;
-    max-width: 1920px;
+    max-width: 69vw;
+    margin: 0 auto;
 }
 
 .menu li {
@@ -104,6 +104,52 @@ nav .menu {
 .menu li a:hover {
     color: #fff;
 }
+
+
+@media (orientation: portrait) and (max-width: 320px) {
+    header {
+        /* width: 163vw; */
+        /* height: 163vh; */
+        background-image: url('../img/headerphoto-tel.jpg');
+    }
+
+    header .welcome {
+        left: 13%;
+        width: 82vw;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header h2 {
+        font-size: 1.8em;
+    }
+
+    nav {
+        bottom: -5%;
+    }
+
+    nav .menu {
+        max-width: 91vw;
+    }
+
+    .menu li a {
+        padding: 0 7px;
+        font-size: 1.2em;
+    }
+
+    .menu li:nth-child(3) a {
+        border-style: none;
+    }
+}
+
+@media () and () {}
+
+@media () and () {}
+
+@media () and () {}
 
 /* sekcja o mnie */
 
@@ -459,7 +505,6 @@ footer p {
 footer a {
     text-align: center;
     color: #ACA18C;
-    font-size: 1.2em;
     font-weight: 300;
     text-decoration: none;
 }
@@ -467,3 +512,5 @@ footer a {
 footer a:hover {
     color: #F0EDDC;
 }
+
+@media () and () {}
