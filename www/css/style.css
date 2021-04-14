@@ -334,11 +334,12 @@ h1.title1 {
 
 .about button {
     background-color: #ACA18C;
-    margin-top: 8vh;
-    margin-left: 16vw;
+    margin-top: 11%;
     border: none;
     border-radius: 1000px;
     transition: 0.3s;
+    position: absolute;
+    left: 57%;
 }
 
 .about button a {
@@ -362,6 +363,220 @@ h1.title1 {
 .about button a:hover {
     color: #ACA18C;
 }
+
+@media (max-width: 1442px) {
+    .about button {
+        left: 51%;
+    }
+
+    .about p {
+        font-size: 1.7em;
+    }
+}
+
+@media (max-width: 1366px) {
+    .about button {
+        left: 50%;
+        margin-top: 9%;
+    }
+
+    .about p {
+        font-size: 1.3em;
+    }
+
+    .profil .img img {
+        width: 80%;
+    }
+
+    .about button a {
+        font-size: 1.3em;
+        line-height: 4vh;
+    }
+
+    h1.title1 {
+        font-size: 4em;
+    }
+}
+
+@media (max-width: 823px) {
+    section.profil {
+        min-height: 80vh;
+    }
+
+    .about button {
+        left: 51%;
+        margin-top: 9%;
+    }
+
+    .about button a {
+        font-size: 1.3em;
+        line-height: 6vh;
+    }
+
+    .about p {
+        font-size: 1em;
+    }
+
+    h1.title1 {
+        font-size: 2.5em;
+    }
+}
+
+@media (max-width: 667px) {
+    section.profil {
+        min-height: 96vh;
+        max-width: 86vw;
+    }
+
+
+    .profil .img img {
+        width: 90%;
+    }
+}
+
+/* media queries na portrait */
+/*
+
+@media (orientation: portrait) and (max-width: 1024px) {
+    header {
+        background-image: url('../img/headerphoto-tel.jpg');
+    }
+
+    header .welcome {
+        padding: 3px;
+        top: 62%;
+        height: 15vh;
+        width: 100%;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 6em;
+    }
+
+    header h2 {
+        font-size: 3.5em;
+    }
+
+    nav {
+        bottom: -2%;
+    }
+
+    .menu li a {
+        padding: 0px 11px;
+        font-size: 1.7em;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 768px) {
+    header .welcome {
+        padding: 18px;
+    }
+
+    header h1 {
+        font-size: 4.8em;
+    }
+
+    header h2 {
+        font-size: 3em;
+    }
+
+    .menu li a {
+        padding: 0 10px;
+        font-size: 1.5em;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 414px) {
+    header h1 {
+        font-size: 4em;
+    }
+
+    header .welcome {
+        padding: 5px;
+    }
+
+    header h2 {
+        font-size: 2.5em;
+    }
+
+    .menu li a {
+        padding: 0 7px;
+        font-size: 1.2em;
+    }
+
+    .menu li:nth-child(3) a {
+        border-style: none;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 360px) {
+    header h1 {
+        font-size: 3em;
+    }
+
+    header .welcome {
+        padding: 10px;
+    }
+
+    header h2 {
+        font-size: 2em;
+    }
+
+    .menu li a {
+        padding: 0 7px;
+        font-size: 1.2em;
+    }
+
+    .menu li:nth-child(3) a {
+        border-style: none;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 320px) {
+    header {
+        background-image: url('../img/headerphoto-tel.jpg');
+    }
+
+    header .welcome {
+        padding: 7px;
+        top: 62%;
+        height: 15vh;
+        width: 100%;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 2.8em;
+    }
+
+    header h2 {
+        font-size: 1.9em;
+    }
+
+    nav {
+        bottom: -4%;
+    }
+
+    nav .menu {
+        text-align: center;
+    }
+
+    .menu li {
+        float: none;
+        display: inline-block;
+    }
+
+    .menu li a {
+        padding: 0 7px;
+        font-size: 1.2em;
+        display: inline-block;
+    }
+
+    .menu li:nth-child(3) a {
+        border-style: none;
+    }
+} */
 
 /* sekcja umiejętności */
 
