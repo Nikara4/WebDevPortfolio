@@ -509,25 +509,34 @@ h1.title1 {
 
 @media (orientation: portrait) and (max-width: 375px) {
     section.profil {
-        min-height: 75vh;
-        max-width: 100vw;
+        min-height: 80vh;
     }
 
-    .profil div {
-        top: 15%;
-    }
-
-    .about p {
-        font-size: 1em;
+    .profil .about {
+        top: 50%;
+        left: 16%;
+        max-width: 65%;
     }
 
     .about button a {
-        font-size: 1em;
-        line-height: 4vh;
+        padding-left: 5vw;
+        padding-right: 5vw;
     }
 
     .profil .img {
-        top: 28%;
+        left: 22%;
+        top: 12%;
+        width: 61%;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 330px) {
+    section.profil {
+        min-height: 95vh;
+    }
+
+    .profil .about {
+        top: 46%;
     }
 }
 
@@ -758,6 +767,115 @@ section.projects {
 .project img:hover {
     transform: scale(1.075);
     cursor: pointer;
+}
+
+@media (max-width: 1366px) {
+    .project img {
+        width: 93%;
+        margin-bottom: 4vh;
+    }
+
+    .project img:hover {
+        transform: none;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 1024px) {
+    .projects h3 {
+        font-size: 2.3em;
+    }
+
+    .project p {
+        padding: 0px 1vw 0 1vw;
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width: 823px) {
+    .projects h3 {
+        font-size: 2em;
+    }
+
+    .project p {
+        font-size: 1.1em;
+        padding: 0;
+    }
+}
+
+@media (max-width: 667px) {
+    section.projects {
+        max-width: 84vw;
+    }
+
+    .projects h3 {
+        font-size: 1.7em;
+    }
+
+    .project p {
+        font-size: 1em;
+        padding: 0px 1vw 0 1vw;
+    }
+
+    .project img {
+        width: 90%;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 1024px) {
+    section.projects {
+        max-width: 90vw;
+    }
+
+    .projects h3 {
+        font-size: 3.4em;
+    }
+
+    .project p {
+        font-size: 2em;
+    }
+
+    .project img {
+        width: 85%;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 768px) {
+    section.projects {
+        max-width: 90vw;
+    }
+
+    .projects h3 {
+        font-size: 2.8em;
+    }
+
+    .project p {
+        font-size: 1.5em;
+    }
+
+    .project img {
+        width: 85%;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 414px) {
+    .projects .project {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .projects h3 {
+        font-size: 2.3em;
+    }
+
+    .project p {
+        font-size: 1.5em;
+    }
+
+    .project img {
+        width: 65%;
+    }
 }
 
 /* sekcja hobby */
