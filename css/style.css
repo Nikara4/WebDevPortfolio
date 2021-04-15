@@ -941,18 +941,77 @@ section.hobby {
     background-color: rgba(86, 115, 147, 0.7);
 }
 
+@media (max-width: 1366px) {
+    .hobby h1.hobbyTitle {
+        font-size: 3em;
+        line-height: 5.5vh;
+    }
+
+    .item p {
+        opacity: 1;
+        text-shadow: 2px 2px 5px #000;
+    }
+
+    .hobby .item:hover {
+        background-size: 100%;
+    }
+
+    .hobby .item p:hover {
+        opacity: 1;
+        background-color: transparent;
+    }
+}
+
+@media (max-width: 823px) {
+    .hobby h1.hobbyTitle {
+        font-size: 2.5em;
+        line-height: 10vh;
+    }
+
+    .item p {
+        line-height: 47vh;
+        font-size: 2.2em;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 1024px) {
+    .hobby h1.hobbyTitle {
+        line-height: 4.5vh;
+    }
+
+    .item p {
+        line-height: 24vh;
+        font-size: 3.5em;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 414px) {
+    .hobby .item {
+        float: none;
+        width: 100%;
+    }
+
+    .hobby h1.hobbyTitle {
+        line-height: 6vh;
+    }
+
+    .item p {
+        line-height: 25vh;
+        font-size: 3em;
+    }
+}
+
 /* sekcja kontakt */
 
 section.contact {
     background-color: #47474A;
     max-width: 1920px;
     padding-bottom: 2vh;
-    margin: 0 auto;
 }
 
 .contact .wrap {
-    max-width: 63vw;
-    margin-left: 45vh;
+    max-width: 1024px;
+    margin: 6vh auto;
 }
 
 .contact .title1:nth-of-type(1) {
@@ -970,14 +1029,13 @@ section.contact {
 
 .contact input,
 textarea {
-    width: 70%;
+    width: 80%;
     margin-bottom: 2vh;
     color: #47474A;
     font-size: 1.5em;
     padding: 0.7vw;
     font-family: 'Open Sans', arial, sans-serif;
 }
-
 
 .contact input {
     height: 5vh;
@@ -997,7 +1055,7 @@ textarea {
     font-size: 2.4em;
     text-transform: uppercase;
     padding: 0;
-    width: 70%;
+    width: 80%;
     transition: 0.3s;
 }
 
@@ -1005,7 +1063,6 @@ textarea {
     transform: scale(1.075);
     box-shadow: inset 0 0 0 2px #F0EDDC;
     background: none;
-    color: #F0EDDC;
     cursor: pointer;
 }
 
@@ -1014,6 +1071,7 @@ textarea {
     color: #F0EDDC;
     font-size: 2.2em;
     line-height: 71px;
+    padding-left: 40px;
 }
 
 .contact .social i {
@@ -1025,6 +1083,121 @@ textarea {
 .contact .social span {
     padding-left: 1.4vw;
 }
+
+@media (max-width: 1512px) {
+    .contact .title1:nth-of-type(1) {
+        margin-left: 29%;
+        width: 39%;
+    }
+}
+
+@media (max-width: 1366px) {
+    .contact .wrap {
+        max-width: 90vw;
+    }
+
+    .contact .social i {
+        line-height: 7vh;
+    }
+
+    .contact button:hover {
+        transform: none;
+        box-shadow: none;
+        background: #ACA18C;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 1024px) {
+    .contact .social i {
+        line-height: 9vh;
+    }
+}
+
+@media (max-width: 823px) {
+    .contact button {
+        line-height: 7vh;
+        font-size: 2em;
+    }
+
+    .contact .socials {
+        font-size: 1.9em;
+        line-height: 64px;
+    }
+
+    .contact .social i {
+        line-height: 64px;
+    }
+
+    .contact input {
+        height: 8vh;
+    }
+
+    .contact textarea {
+        height: 30vh;
+    }
+}
+
+@media (max-width: 823px) {
+    .contact .title1:nth-of-type(1) {
+        margin-left: 24%;
+        width: 47%;
+    }
+
+    .contact button {
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 568px) {
+    .contact .title1:nth-of-type(1) {
+        margin-left: 21%;
+        width: 54%;
+    }
+
+    .contact button {
+        font-size: 1.5em;
+    }
+
+    .contact .socials {
+        font-size: 1.6em;
+        line-height: 50px;
+        padding-left: 24px;
+    }
+
+    .contact .social i {
+        line-height: 50px;
+    }
+}
+
+/* portrait */
+/*
+@media (orientation: portrait) and (max-width: 1024px) {
+    .contact .wrap {
+        max-width: 90vw;
+    }
+
+    .contact .social i {
+        line-height: 9vh;
+    }
+}
+
+
+@media (orientation: portrait) and (max-width: 414px) {
+    .hobby .item {
+        float: none;
+        width: 100%;
+    }
+
+    .hobby h1.hobbyTitle {
+        line-height: 6vh;
+    }
+
+    .item p {
+        line-height: 25vh;
+        font-size: 3em;
+    }
+} */
 
 /* footer  */
 
