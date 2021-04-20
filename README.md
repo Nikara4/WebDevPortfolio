@@ -1,2 +1,2 @@
-# Web-Dev-junior-portfolio
-My first project - Web-Developer Junior portfolio
+# Web Developer | Junior Portfolio 
+File readme to be created
