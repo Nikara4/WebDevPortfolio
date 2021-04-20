@@ -846,7 +846,7 @@ section.projects {
     }
 
     .projects h3 {
-        font-size: 2.8em;
+        font-size: 2.5em;
     }
 
     .project p {
@@ -980,8 +980,8 @@ section.hobby {
     }
 
     .item p {
-        line-height: 24vh;
-        font-size: 3.5em;
+        line-height: 17vh;
+        font-size: 2.5em;
     }
 }
 
@@ -1110,7 +1110,7 @@ textarea {
 
 @media (max-width: 1024px) {
     .contact .social i {
-        line-height: 9vh;
+        line-height: 70px;
     }
 }
 
@@ -1170,34 +1170,105 @@ textarea {
     }
 }
 
-/* portrait */
-/*
 @media (orientation: portrait) and (max-width: 1024px) {
+    .contact .title1:nth-of-type(1) {
+        margin-left: 18%;
+        width: 63%;
+
+    }
+
     .contact .wrap {
-        max-width: 90vw;
+        max-width: 100vw;
+    }
+
+    .contact form,
+    .socials {
+        float: none;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .contact input,
+    textarea {
+        font-size: 2em;
+        padding: 2.1vw;
+    }
+
+    .contact input {
+        height: 6vh;
+    }
+
+    .contact textarea {
+        height: 27vh;
+    }
+
+    .contact button {
+        font-size: 2.3em;
+    }
+
+    .contact .socials {
+        font-size: 3em;
+        line-height: 69px;
+        margin-top: 9%;
+        width: 60%;
+        text-align: center;
+        padding: 0;
     }
 
     .contact .social i {
-        line-height: 9vh;
+        line-height: 5vh;
     }
 }
 
 
-@media (orientation: portrait) and (max-width: 414px) {
-    .hobby .item {
+@media (orientation: portrait) and (max-width: 768px) {
+    .contact .title1:nth-of-type(1) {
+        margin-left: 17%;
+    }
+
+    .contact form,
+    .socials {
         float: none;
-        width: 100%;
+        margin: 0 auto;
+        width: 90%;
     }
 
-    .hobby h1.hobbyTitle {
-        line-height: 6vh;
+    .contact input,
+    textarea {
+        font-size: 1.5em;
     }
 
-    .item p {
-        line-height: 25vh;
-        font-size: 3em;
+    .contact .socials {
+        font-size: 1.7em;
+        line-height: 52px;
     }
-} */
+}
+
+@media (orientation: portrait) and (max-width: 414px) {
+    .contact .title1:nth-of-type(1) {
+        margin-left: 14%;
+        width: 72%;
+    }
+
+    .contact input,
+    textarea {
+        font-size: 1.3em;
+    }
+
+    .contact button {
+        font-size: 1.3em;
+    }
+
+    .contact .socials {
+        font-size: 1.5em;
+        line-height: 45px;
+        width: 67%;
+    }
+
+    .contact .social i {
+        line-height: 44px;
+    }
+}
 
 /* footer  */
 
@@ -1230,4 +1301,50 @@ footer a {
 
 footer a:hover {
     color: #F0EDDC;
+}
+
+@media (max-width: 1024px) {
+    footer {
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 812px) {
+    footer p {
+        font-size: 1.1em;
+    }
+
+    footer h3 {
+        font-size: 1.7em;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 1024px) {
+    footer p {
+        line-height: 35px;
+        font-size: 1.7em;
+    }
+
+    footer h3 {
+        font-size: 2.5em;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 768px) {
+    footer p {
+        font-size: 1.5em;
+        line-height: 35px;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 414px) {
+    footer p {
+        font-size: 1.2em;
+        line-height: 25px;
+    }
+
+    footer h3 {
+        font-size: 2em;
+    }
 }
