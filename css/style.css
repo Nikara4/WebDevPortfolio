@@ -115,21 +115,21 @@ nav .menu {
 
 @media (max-width: 1366px) {
     header .welcome {
-        width: 58vw;
-        padding-top: 3vh;
+        width: 70vw;
+        padding-top: 2vh;
     }
 
     header h1 {
-        font-size: 5.5vh;
+        font-size: 7vh;
     }
 
     header h2 {
-        font-size: 4vh;
+        font-size: 5vh;
     }
 
     .menu li a {
         padding: 0 20px;
-        font-size: 1.7vh;
+        font-size: 3vh;
     }
 
     .menu li a:hover {
@@ -138,6 +138,10 @@ nav .menu {
 }
 
 @media (max-width: 667px) {
+    header .welcome {
+        width: 58vw;
+    }
+
     .menu li a {
         padding: 0 15px;
     }
