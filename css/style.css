@@ -438,7 +438,7 @@ h1.title1 {
     }
 
     .about p {
-        font-size: 1em;
+        font-size: 1.1em;
     }
 
     h1.title1 {
@@ -495,7 +495,13 @@ h1.title1 {
 
 @media (orientation: portrait) and (max-width: 704px) {
     section.profil {
-        min-height: 50vh;
+        min-height: 74vh;
+    }
+
+    .profil .about {
+        top: 48%;
+        left: 16%;
+        max-width: 65%;
     }
 
     .about button {
@@ -503,11 +509,17 @@ h1.title1 {
     }
 
     .about p {
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
     .about button a {
         font-size: 1.2em;
+    }
+
+    .profil .img {
+        left: 22%;
+        top: 12%;
+        width: 61%;
     }
 }
 
@@ -516,21 +528,13 @@ h1.title1 {
         min-height: 80vh;
     }
 
-    .profil .about {
-        top: 50%;
-        left: 16%;
-        max-width: 65%;
+    .about p {
+        font-size: 1em;
     }
 
     .about button a {
         padding-left: 5vw;
         padding-right: 5vw;
-    }
-
-    .profil .img {
-        left: 22%;
-        top: 12%;
-        width: 61%;
     }
 }
 
