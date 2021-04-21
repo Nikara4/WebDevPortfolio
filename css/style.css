@@ -137,7 +137,7 @@ nav .menu {
     }
 }
 
-@media (max-width: 667px) {
+@media (max-width: 832px) {
     header .welcome {
         width: 58vw;
     }
@@ -218,7 +218,7 @@ nav .menu {
     }
 
     .menu li a {
-        padding: 0 7px;
+        padding: 0 10px;
         font-size: 1.2em;
     }
 
@@ -422,7 +422,7 @@ h1.title1 {
     }
 }
 
-@media (max-width: 823px) {
+@media (max-width: 832px) {
     section.profil {
         min-height: 80vh;
     }
@@ -621,7 +621,7 @@ h3.title {
     }
 }
 
-@media (max-width: 823px) {
+@media (max-width: 832px) {
     .skillMain i {
         font-size: 10em;
     }
@@ -796,7 +796,7 @@ section.projects {
     }
 }
 
-@media (max-width: 823px) {
+@media (max-width: 832px) {
     .projects h3 {
         font-size: 2em;
     }
@@ -966,7 +966,7 @@ section.hobby {
     }
 }
 
-@media (max-width: 823px) {
+@media (max-width: 832px) {
     .hobby h1.hobbyTitle {
         font-size: 2.5em;
         line-height: 10vh;
@@ -1118,7 +1118,7 @@ textarea {
     }
 }
 
-@media (max-width: 823px) {
+@media (max-width: 832px) {
     .contact button {
         line-height: 7vh;
         font-size: 2em;
@@ -1140,9 +1140,7 @@ textarea {
     .contact textarea {
         height: 30vh;
     }
-}
 
-@media (max-width: 823px) {
     .contact .title1:nth-of-type(1) {
         margin-left: 24%;
         width: 47%;
