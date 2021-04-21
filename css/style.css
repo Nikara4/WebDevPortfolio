@@ -424,12 +424,13 @@ h1.title1 {
 
 @media (max-width: 832px) {
     section.profil {
-        min-height: 80vh;
+        min-height: 95vh;
+        max-width: 80vw;
     }
 
     .about button {
-        left: 51%;
-        margin-top: 9%;
+        left: 61%;
+        margin-top: 7%;
     }
 
     .about button a {
@@ -438,7 +439,7 @@ h1.title1 {
     }
 
     .about p {
-        font-size: 1.1em;
+        font-size: 1.3em;
     }
 
     h1.title1 {
@@ -448,7 +449,7 @@ h1.title1 {
 
 @media (max-width: 667px) {
     section.profil {
-        min-height: 96vh;
+        min-height: 111vh;
         max-width: 86vw;
     }
 
@@ -460,7 +461,11 @@ h1.title1 {
 
 @media (max-width: 568px) {
     section.profil {
-        min-height: 95vh;
+        min-height: 107vh;
+    }
+
+    .about p {
+        font-size: 1.1em;
     }
 }
 
@@ -506,7 +511,7 @@ h1.title1 {
     }
 
     .about button {
-        left: 51%;
+        left: 66%;
     }
 
     .about p {
@@ -515,6 +520,8 @@ h1.title1 {
 
     .about button a {
         font-size: 1.2em;
+        padding-left: 6vw;
+        padding-right: 6vw;
     }
 
     .profil .img {
