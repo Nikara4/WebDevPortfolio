@@ -1,5 +1,5 @@
 # Junior Web Developer | Portfolio 
-> My first simple Web Page project as a Junior Web Developer Portfolio.
+> My first simple Web Page project: a Junior Web Developer Portfolio.
 
 ## Table of contents
 * [General info](#general-info)
