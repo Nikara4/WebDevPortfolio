@@ -129,7 +129,7 @@ nav .menu {
 
     .menu li a {
         padding: 0 20px;
-        font-size: 3vh;
+        font-size: 2vh;
     }
 
     .menu li a:hover {
@@ -144,6 +144,7 @@ nav .menu {
 
     .menu li a {
         padding: 0 15px;
+        font-size: 3vh;
     }
 }
 
@@ -1006,7 +1007,7 @@ section.hobby {
 
     .item p {
         line-height: 25vh;
-        font-size: 3em;
+        font-size: 2.5em;
     }
 }
 
@@ -1150,20 +1151,25 @@ a {
     }
 }
 
-@media (max-width: 568px) {
+@media (max-width: 667px) {
     .contact .title1:nth-of-type(1) {
         margin-left: 21%;
         width: 54%;
     }
 
     .contact button {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 
     .contact .socials {
         font-size: 1.6em;
         line-height: 50px;
         padding-left: 24px;
+    }
+
+    .contact input,
+    textarea {
+        font-size: 1.2em;
     }
 }
 
