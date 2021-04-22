@@ -298,10 +298,8 @@ nav .menu {
 /* sekcja o mnie */
 
 section.profil {
-    position: relative;
-    max-width: 63vw;
-    min-height: 54vh;
-    margin: 3vw auto 0 auto;
+    max-width: 60vw;
+    margin: 4vh auto 6vh auto;
 }
 
 h1.title1 {
@@ -316,22 +314,20 @@ h1.title1 {
 }
 
 .profil div {
-    position: absolute;
-    top: 20%;
-}
-
-.profil .img {
-    left: 58%;
+    float: right;
+    width: 50%;
+    margin-top: 2%;
 }
 
 .profil .img img {
-    width: 60%;
+    width: 50%;
     border: 14px solid #ACA18C;
     border-radius: 50%;
+    margin: 7%;
+    margin-left: 15%;
 }
 
 .profil .about {
-    left: 5%;
     max-width: 47%;
 }
 
@@ -340,16 +336,15 @@ h1.title1 {
     font-weight: 300;
     color: #ACA18C;
     text-align: justify;
+    margin-top: 7px;
 }
 
 .about button {
     background-color: #ACA18C;
-    margin-top: 11%;
+    margin-top: 9%;
     border: none;
     border-radius: 1000px;
     transition: 0.3s;
-    position: absolute;
-    left: 57%;
 }
 
 .about button a {
@@ -374,13 +369,17 @@ h1.title1 {
     color: #ACA18C;
 }
 
-@media (max-width: 1442px) {
-    .about button {
-        left: 51%;
+@media (max-width: 1663px) {
+    .profil div {
+        margin-top: 5%;
     }
 
     .about p {
         font-size: 1.7em;
+    }
+
+    .profil .img img {
+        width: 60%;
     }
 }
 
@@ -390,8 +389,7 @@ h1.title1 {
     }
 
     .about button {
-        left: 50%;
-        margin-top: 9%;
+        margin-top: 23%;
     }
 
     .about p {
@@ -403,7 +401,7 @@ h1.title1 {
     }
 
     .about button a {
-        font-size: 1.3em;
+        font-size: 1.9em;
         line-height: 4vh;
     }
 
@@ -476,84 +474,79 @@ h1.title1 {
     }
 
     .profil div {
-        top: 15%;
+        float: none;
+        width: 100%;
+        margin: 0 auto;
     }
 
-    .about button {
-        left: 65%;
+    .profil .img img {
+        width: 50%;
+        width: 50%;
+        margin: 5% 25%;
+    }
+
+    .profil .about {
+        max-width: 75%;
     }
 
     .about p {
-        font-size: 1.5em;
+        font-size: 2.5em;
     }
 
     .about button {
-        left: 57%;
-        margin-top: 4%;
+        margin-top: 10%;
     }
 
     .about button a {
-        font-size: 1.7em;
-        line-height: 3vh;
+        font-size: 2.5em;
+        line-height: 4vh;
+        padding-left: 5vw;
+        padding-right: 5vw;
     }
 }
 
-@media (orientation: portrait) and (max-width: 704px) {
+@media (orientation: portrait) and (max-width: 768px) {
     section.profil {
         min-height: 85vh;
         max-width: 100vw;
     }
 
     .profil .about {
-        top: 51%;
-        left: 10%;
-        max-width: 80%;
-    }
-
-    .about button {
-        left: 66%;
+        max-width: 50%;
     }
 
     .about p {
-        font-size: 1.4em;
+        font-size: 1.7em;
     }
 
     .about button a {
-        font-size: 1.2em;
-        padding-left: 6vw;
-        padding-right: 6vw;
+        font-size: 2em;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 414px) {
+    section.profil {
+        min-height: 75vh;
     }
 
-    .profil .img {
-        left: 22%;
-        top: 12%;
-        width: 61%;
+    .profil .about {
+        max-width: 69%;
+    }
+
+    .about p {
+        font-size: 1.2em;
+    }
+
+    .about button a {
+        font-size: 1.3em;
     }
 }
 
 @media (orientation: portrait) and (max-width: 375px) {
-    section.profil {
-        min-height: 80vh;
-    }
-
-    .profil .about {
-        top: 52%;
-    }
-
     .about p {
         font-size: 1.2em;
     }
 
-    .about button a {
-        padding-left: 5vw;
-        padding-right: 5vw;
-    }
-}
-
-@media (orientation: portrait) and (max-width: 330px) {
-    section.profil {
-        min-height: 95vh;
-    }
 }
 
 /* sekcja umiejętności */
@@ -1096,8 +1089,16 @@ textarea {
     line-height: 7.5vh;
 }
 
-.contact .social span {
+.contact .social span,
+a {
     padding-left: 1.4vw;
+    color: #F0EDDC;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.social a:hover {
+    color: #ACA18C;
 }
 
 @media (max-width: 1512px) {
@@ -1311,6 +1312,7 @@ footer a {
     color: #ACA18C;
     font-weight: 300;
     text-decoration: none;
+    padding: 0;
 }
 
 footer a:hover {
