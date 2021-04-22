@@ -1323,8 +1323,12 @@ footer a:hover {
 
 @media (orientation: portrait) and (max-width: 768px) {
     footer p {
-        font-size: 1.5em;
-        line-height: 35px;
+        font-size: 1.2em;
+        line-height: 24px;
+    }
+
+    footer h3 {
+        font-size: 2em;
     }
 }
 
