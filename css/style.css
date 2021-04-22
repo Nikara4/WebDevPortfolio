@@ -10,6 +10,12 @@
     clear: both;
 }
 
+#profile,
+#skills,
+#projects {
+    color: #ACA18C;
+}
+
 body {
     font-family: 'Open Sans', arial, sans-serif;
     font-size: 10px;
