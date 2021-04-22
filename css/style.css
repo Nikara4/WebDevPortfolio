@@ -1086,7 +1086,7 @@ textarea {
 .contact .social i {
     float: left;
     font-size: 1.5em;
-    line-height: 7.5vh;
+    line-height: inherit;
 }
 
 .contact .social span,
@@ -1113,21 +1113,11 @@ a {
         max-width: 90vw;
     }
 
-    .contact .social i {
-        line-height: 7vh;
-    }
-
     .contact button:hover {
         transform: none;
         box-shadow: none;
         background: #ACA18C;
         cursor: pointer;
-    }
-}
-
-@media (max-width: 1024px) {
-    .contact .social i {
-        line-height: 70px;
     }
 }
 
@@ -1139,10 +1129,6 @@ a {
 
     .contact .socials {
         font-size: 1.9em;
-        line-height: 64px;
-    }
-
-    .contact .social i {
         line-height: 64px;
     }
 
@@ -1178,10 +1164,6 @@ a {
         font-size: 1.6em;
         line-height: 50px;
         padding-left: 24px;
-    }
-
-    .contact .social i {
-        line-height: 50px;
     }
 }
 
@@ -1229,10 +1211,6 @@ a {
         text-align: center;
         padding: 0;
     }
-
-    .contact .social i {
-        line-height: 5vh;
-    }
 }
 
 
@@ -1278,10 +1256,6 @@ a {
         font-size: 1.5em;
         line-height: 45px;
         width: 67%;
-    }
-
-    .contact .social i {
-        line-height: 44px;
     }
 }
 
