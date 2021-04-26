@@ -20,19 +20,21 @@ I intend to expand this with advanced CSS and JavaScript later on. My motivation
 * CSS
 
 ## Setup
-A link to demo version will be available soon.
+[github pages link](https://nikara4.github.io/WebDevPortfolio/)
 
 ## Features
-The project is designed for desktop and mobile versions (including iPad and iPad Pro). I intend to test the code on real phones to check the functionality soon.
+The project is designed for desktop and mobile versions (including iPad and iPad Pro). I have run into a problem with Apple mobile devices when testing (both Iphones and Ipads). The image is widened and pixeled. I intend to fix this soon.
 
 There are no JavaScript features in the project at the moment, but I intend to expand it it the future.
 
 ## Status
 Project is: in progress. I have finished a basic code with the structure and CSS styles. 
-The following are to be added: 
+The following were added: 
 * Profile description
 * My CV section - a subpage consisting of my resume information
 * Working links in menu
+
+The following are not completed:
 * Projects information, when other projects are finished
 * Backend system to the contact section allowing to send messages
 
