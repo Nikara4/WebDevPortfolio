@@ -46,7 +46,7 @@ header .welcome {
     height: 20vh;
     width: 47vw;
     text-align: left;
-    color: #F0EDDC;
+    color: #F0EDE1;
 }
 
 header h1,
@@ -57,7 +57,7 @@ h2 {
 
 header h1 {
     font-size: 7vh;
-    border-bottom: 1px solid #F0EDDC;
+    border-bottom: 1px solid #F0EDE1;
     padding-bottom: 0.5vh;
 }
 
@@ -90,13 +90,13 @@ nav .menu {
     display: inline-block;
     margin-bottom: 1.5vh;
     margin-top: 1.5vh;
-    color: #F0EDDC;
+    color: #F0EDE1;
     text-decoration: none;
     padding: 0 40px;
     font-size: 2.3vh;
     font-weight: 200;
     letter-spacing: 1px;
-    border-right: 1px solid #F0EDDC;
+    border-right: 1px solid #F0EDE1;
     transition: .4s;
 }
 
@@ -139,7 +139,7 @@ nav .menu {
     }
 
     .menu li a:hover {
-        color: #F0EDDC;
+        color: #F0EDE1;
     }
 }
 
@@ -359,7 +359,7 @@ h1.title1 {
     font-size: 2.4em;
     line-height: 5vh;
     font-weight: 300;
-    color: #F0EDDC;
+    color: #F0EDE1;
     font-family: 'Montserrat', arial, sans-serif;
     padding-left: 3vw;
     padding-right: 3vw;
@@ -423,7 +423,7 @@ h1.title1 {
     }
 
     .about button a:hover {
-        color: #F0EDDC;
+        color: #F0EDE1;
     }
 }
 
@@ -900,7 +900,7 @@ section.hobby {
     max-width: 1920px;
     margin: 0 auto;
     text-align: center;
-    color: #F0EDDC;
+    color: #F0EDE1;
 }
 
 .hobby h1.hobbyTitle {
@@ -1034,7 +1034,8 @@ section.contact {
     padding-top: 6vh;
     margin-left: 31%;
     width: 34%;
-    color: #F0EDDC;
+    color: #F0EDE1;
+    border-bottom: 2px solid #F0EDE1;
 }
 
 .contact form,
@@ -1065,7 +1066,7 @@ textarea {
     border: none;
     border-radius: 1000px;
     background-color: #ACA18C;
-    color: #F0EDDC;
+    color: #F0EDE1;
     font-family: 'Montserrat', arial, sans-serif;
     line-height: 5vh;
     font-size: 2.4em;
@@ -1077,14 +1078,14 @@ textarea {
 
 .contact button:hover {
     transform: scale(1.075);
-    box-shadow: inset 0 0 0 2px #F0EDDC;
+    box-shadow: inset 0 0 0 2px #F0EDE1;
     background: none;
     cursor: pointer;
 }
 
 .contact .socials {
     text-align: left;
-    color: #F0EDDC;
+    color: #F0EDE1;
     font-size: 2.2em;
     line-height: 71px;
     padding-left: 40px;
@@ -1096,10 +1097,9 @@ textarea {
     line-height: inherit;
 }
 
-.contact .social span,
-a {
+.contact .social a {
     padding-left: 1.4vw;
-    color: #F0EDDC;
+    color: #F0EDE1;
     text-decoration: none;
     transition: 0.3s;
 }
@@ -1278,7 +1278,7 @@ footer {
     max-width: 1920px;
     margin: 0 auto;
     text-align: center;
-    color: #F0EDDC;
+    color: #F0EDE1;
     font-weight: 300;
     line-height: 25px;
     padding-bottom: 20px;
@@ -1302,7 +1302,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #F0EDDC;
+    color: #F0EDE1;
 }
 
 @media (max-width: 1024px) {
