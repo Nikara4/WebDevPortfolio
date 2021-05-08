@@ -36,7 +36,7 @@ The following were added:
 * My CV section - a subpage consisting of my resume information,
 * Working links in menu.
 
-Update 08/05/2021: cosmetic changes were made to html and css files in order to improve the design. The resolution 1366px needs changing for desktop wiev.
+**Update 08/05/2021**: cosmetic changes were made to html and css files in order to improve the design. The resolution 1366px needs changing for desktop wiev.
 
 The following are not completed:
 * Projects information, when other projects are finished,
