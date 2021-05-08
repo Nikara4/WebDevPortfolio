@@ -28,15 +28,20 @@ The project is designed for desktop and mobile versions (including iPad and iPad
 There are no JavaScript features in the project at the moment, but I intend to expand it it the future.
 
 ## Status
-Project is: in progress. I have finished a basic code with the structure and CSS styles. 
+Project is: in progress. 
+
+I have finished a basic code with the structure and CSS styles. 
 The following were added: 
-* Profile description
-* My CV section - a subpage consisting of my resume information
-* Working links in menu
+* Profile description,
+* My CV section - a subpage consisting of my resume information,
+* Working links in menu.
+
+Update 08/05/2021: cosmetic changes were made to html and css files in order to improve the design. The resolution 1366px needs changing for desktop wiev.
 
 The following are not completed:
-* Projects information, when other projects are finished
-* Backend system to the contact section allowing to send messages
+* Projects information, when other projects are finished,
+* Backend system to the contact section allowing to send messages.
+
 
 ## Inspiration
 This project is based on a final excercise from the course: Web developer od podstaw w 15 dni - [Samuraj Programowania](https://websamuraj.pl/)
