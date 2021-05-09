@@ -25,7 +25,7 @@ body {
 header {
     height: 100vh;
     position: relative;
-    overflow: hidden;
+    min-width: 320px;
     max-width: 1920px;
     margin: 0 auto;
     background-image: url('../img/headerphoto.jpg');
@@ -121,7 +121,7 @@ nav .menu {
 
 @media (max-width: 1366px) {
     header .welcome {
-        width: 70vw;
+        width: 54vw;
         padding-top: 2vh;
     }
 
@@ -135,11 +135,7 @@ nav .menu {
 
     .menu li a {
         padding: 0 20px;
-        font-size: 2vh;
-    }
-
-    .menu li a:hover {
-        color: #F0EDE1;
+        font-size: 2.3vh;
     }
 }
 
@@ -151,6 +147,10 @@ nav .menu {
     .menu li a {
         padding: 0 15px;
         font-size: 3vh;
+    }
+
+    .menu li a:hover {
+        color: #F0EDE1;
     }
 }
 
@@ -400,7 +400,7 @@ h1.title1 {
     }
 
     .about p {
-        font-size: 1.3em;
+        font-size: 1.4em;
     }
 
     .profil .img img {
@@ -409,21 +409,14 @@ h1.title1 {
 
     .about button a {
         font-size: 1.9em;
-        line-height: 4vh;
+        line-height: 4.5vh;
     }
 
-    h1.title1 {
-        font-size: 3em;
-    }
-
-    .about button:hover {
-        transform: none;
-        box-shadow: none;
-        background-color: #ACA18C;
-    }
-
-    .about button a:hover {
-        color: #F0EDE1;
+    #profile,
+    #skills,
+    #projects,
+    #contact {
+        font-size: .7em;
     }
 }
 
@@ -449,6 +442,16 @@ h1.title1 {
 
     h1.title1 {
         font-size: 2.5em;
+    }
+
+    .about button:hover {
+        transform: none;
+        box-shadow: none;
+        background-color: #ACA18C;
+    }
+
+    .about button a:hover {
+        color: #F0EDE1;
     }
 }
 
@@ -791,9 +794,8 @@ section.projects {
         margin-bottom: 4vh;
     }
 
-    .project img:hover {
-        transform: none;
-        cursor: pointer;
+    .project p {
+        font-size: 1.4em;
     }
 }
 
@@ -805,6 +807,12 @@ section.projects {
     .project p {
         padding: 0px 1vw 0 1vw;
         font-size: 1.3em;
+    }
+
+
+    .project img:hover {
+        transform: none;
+        cursor: pointer;
     }
 }
 
@@ -959,22 +967,16 @@ section.hobby {
 
 @media (max-width: 1366px) {
     .hobby h1.hobbyTitle {
-        font-size: 3em;
         line-height: 5.5vh;
+    }
+
+    #hobby {
+        font-size: .7em;
     }
 
     .item p {
         opacity: 1;
         text-shadow: 2px 2px 5px #000;
-    }
-
-    .hobby .item:hover {
-        background-size: 100%;
-    }
-
-    .hobby .item p:hover {
-        opacity: 1;
-        background-color: transparent;
     }
 }
 
@@ -987,6 +989,16 @@ section.hobby {
     .item p {
         line-height: 47vh;
         font-size: 2.2em;
+    }
+
+
+    .hobby .item:hover {
+        background-size: 100%;
+    }
+
+    .hobby .item p:hover {
+        opacity: 1;
+        background-color: transparent;
     }
 }
 
@@ -1097,7 +1109,8 @@ textarea {
     line-height: inherit;
 }
 
-.contact .social a {
+.contact .social a,
+span {
     padding-left: 1.4vw;
     color: #F0EDE1;
     text-decoration: none;
@@ -1118,13 +1131,6 @@ textarea {
 @media (max-width: 1366px) {
     .contact .wrap {
         max-width: 90vw;
-    }
-
-    .contact button:hover {
-        transform: none;
-        box-shadow: none;
-        background: #ACA18C;
-        cursor: pointer;
     }
 }
 
@@ -1154,6 +1160,13 @@ textarea {
 
     .contact button {
         font-size: 1.8em;
+    }
+
+    .contact button:hover {
+        transform: none;
+        box-shadow: none;
+        background: #ACA18C;
+        cursor: pointer;
     }
 }
 
