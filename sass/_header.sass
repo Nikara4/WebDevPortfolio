@@ -1,0 +1,31 @@
+header
+    +page-center()
+    height: 100vh
+    position: relative
+    min-width: 320px
+    max-width: 1920px
+    background-image: url('../img/headerphoto.jpg')
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    background-attachment: fixed
+    font-family: $montserrat-font
+    & .welcome
+        +position-absolute(absolute, 47%, 0)
+        z-index: 1
+        padding: 2vh 5vw 2vh 0
+        background-color: $medium-beige
+        height: 20vh
+        width: 47vw
+        text-align: left
+        color: $light-beige
+    & h1
+        +header-titles()
+        font-size: 7vh
+        border-bottom: 1px solid $light-beige
+        padding-bottom: 0.5vh
+    & h2
+        +header-titles()
+        font-size: 4.5vh
+        padding-top: 1vh
+        border-bottom: none
