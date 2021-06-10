@@ -1,0 +1,41 @@
+section.hobby
+    max-width: 1920px
+    +page-center()
+    +text-center()
+    color: $light-beige
+    & h1.hobbyTitle
+        line-height: 7.5vh
+        font-size: 4.8em
+        font-weight: 400
+        color: $light-beige
+        background-color: $medium-beige
+    & .wrapHobby
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-template-rows: repeat(2, 1fr)
+        +page-center()
+        width: 100%
+        & .item
+            background-position: center
+            background-repeat: no-repeat
+            background-size: 100%
+            transition: .7s
+            &:hover
+                background-size: 130%
+            &:nth-of-type(1)
+                background-image: url('../img/hobby1-b.jpg')
+            &:nth-of-type(2)
+                background-image: url('../img/hobby2.jpg')
+            &:nth-of-type(3)
+                background-image: url('../img/hobby3.jpg')
+            &:nth-of-type(4)
+                background-image: url('../img/hobby-plants3.jpg')
+            & p
+                +text-center()
+                line-height: 41vh
+                font-size: 3.6em
+                transition: .7s
+                opacity: 0
+                &:hover
+                    opacity: 1
+                    background-color: rgba(86, 115, 147, 0.7)
