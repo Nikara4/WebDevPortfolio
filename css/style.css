@@ -268,7 +268,6 @@ div.section-wrap .skills h1.title1 {
   font-size: 4.8em;
   font-weight: 400;
   color: #ACA18C;
-  flex-basis: 100%;
 }
 
 div.section-wrap .skills h1.title1::after {
