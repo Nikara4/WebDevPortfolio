@@ -6,6 +6,7 @@
 * [Technologies](#technologies)
 * [Features](#features)
 * [Status](#status)
+* [Updates](#updates)
 * [Inspiration](#inspiration)
 
 ## General info
@@ -31,6 +32,17 @@ There are no JavaScript features in the project at the moment, but I intend to e
 Project is: in progress. 
 
 I have finished a basic code with the structure and CSS styles. 
+
+TBA:
+* mobile views for new Sass code,
+* jQuery and JavaScript for animations, scrolling with menu visible, etc.
+
+The following are not completed:
+* Projects information, when other projects are finished,
+* Backend system to the contact section allowing to send messages.
+
+
+## Updates
 The following were added: 
 * Profile description,
 * My CV section - a subpage consisting of my resume information,
@@ -38,9 +50,7 @@ The following were added:
 
 **Update 08/05/2021**: cosmetic changes were made to html and css files in order to improve the design. The resolution 1366px needs changing for desktop wiev.
 
-The following are not completed:
-* Projects information, when other projects are finished,
-* Backend system to the contact section allowing to send messages.
+**Update 10/06/2021**: completed Sass code for desktop view and changed menu display.
 
 
 ## Inspiration
