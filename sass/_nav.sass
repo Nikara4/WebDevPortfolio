@@ -1,29 +1,88 @@
 nav
+    display: block
     +position-absolute(absolute, 93%, 90%)
     width: 7vw
     background-color: $medium-beige
     z-index: 1
-    & ul
-        +flexbox(column, no-wrap, 0)
-        list-style: none
-        & a
-            display: block
-            line-height: 65px
-            color: $light-beige
-            text-decoration: none
-            padding: 0 10px
-            +text-center()
-            font-size: 1.7vh
-            font-weight: 400
-            letter-spacing: 1px
-            transition: .4s
-            &:hover
-                color: $medium-beige
-                background-color: $light-beige
-            & i.start
-                line-height: 65px
-                font-size: 3.5em
-        & li:nth-of-type(1) a
-            height: 65px
+    +menu-content-desktop()
 nav.scrolling
     +position-absolute(fixed, 10%, 90%)
+
+nav.mobile
+    display: none
+    z-index: 2
+    +position-absolute(fixed, 2%, 7%)
+    background-color: transparent
+    & .menu-mobile
+        font-size: 3em
+        color: $dark-beige
+        cursor: pointer
+        &.show
+            color: $light-beige
+
+aside
+    display: none
+    z-index: 1
+    position: absolute
+    left: 0
+    top: 0
+    padding: 10vh 7vw
+    width: 70vw
+    height: 100vh
+    background-color: $medium-beige
+    transition: .5s
+    +menu-content-mobile()
+    &.show
+        display: block
+
+@media (max-width: 1200px)
+    nav
+        width: 10vw
+        left: 85%
+        & ul a
+            line-height: 95px
+            & i.start
+                line-height: 95px
+        & ul li:nth-of-type(1) a
+            height: 95px
+
+@media (orientation: portrait) and (max-width: 1024px)
+    nav
+        width: 15vw
+        left: 80%
+
+@media (orientation: portrait) and (min-width: 768px)
+    //naprawić!!!
+    nav
+        display: none
+    nav.mobile
+        display: block
+    nav ul a
+        line-height: 70px
+        & i.start
+            line-height: 70px
+    nav ul li:nth-of-type(1) a
+        height: 70px
+
+@media (max-width: 832px)
+    nav
+        display: none
+    nav.mobile
+        display: block
+
+@media (orientation: landscape)
+    nav.mobile
+        left: 3%
+        & .menu-mobile
+            color: $medium-beige
+
+@media (orientation: landscape) and (max-width: 1024px)
+    nav
+        width: 10vw
+        left: 85%
+        & ul a
+            line-height: 55px
+            & i.start
+                line-height: 55px
+        & ul li:nth-of-type(1) a
+            height: 55px

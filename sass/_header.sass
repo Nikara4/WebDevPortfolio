@@ -11,7 +11,8 @@ header
     background-attachment: fixed
     font-family: $montserrat-font
     & .welcome
-        +position-absolute(absolute, 47%, 0)
+        +flexbox(column, nowrap, 1)
+        +position-absolute(absolute, 55%, 0)
         z-index: 1
         padding: 2vh 5vw 2vh 0
         background-color: $medium-beige
@@ -27,3 +28,34 @@ header
         +header-titles()
         font-size: 4.5vh
         padding-top: 1vh
+
+/*! media queries for header */
+@media (orientation: portrait) and (max-width: 1024px)
+    header
+        background-image: url('../img/headerphoto-tel.jpg')
+        & .welcome
+            +flexbox(column, nowrap, 1)
+            justify-content: center
+            align-content: stretch
+            padding: 0
+            top: 62%
+            height: 15vh
+            width: 100%
+            +text-center()
+        & h1
+            font-size: 6em
+        & h2
+            font-size: 3.5em
+
+@media (orientation: portrait) and (max-width: 414px)
+    header
+        & .welcome
+            padding: 2.5%
+        & h1
+            font-size: 3em
+        & h2
+            font-size: 2em
+
+@media (orientation: landscape) and (max-width: 1416px)
+    header .welcome
+        width: 65%

@@ -42,3 +42,46 @@
     width: 30%
     +page-center()
     border-bottom: 2px solid $medium-beige
+
+=menu-content-desktop()
+    & ul
+        +flexbox(column, nowrap, 0)
+        list-style: none
+        & a
+            display: block
+            line-height: 65px
+            color: $light-beige
+            text-decoration: none
+            padding: 0 10px
+            +text-center()
+            font-size: 1.7vh
+            font-weight: 400
+            letter-spacing: 1px
+            transition: .4s
+            &:hover
+                color: $medium-beige
+                background-color: $light-beige
+            & i.start
+                line-height: 65px
+                font-size: 3.5em
+        & li:nth-of-type(1) a
+            height: 65px
+
+=menu-content-mobile()
+    & ul
+        +flexbox(column, nowrap, 0)
+        list-style: none
+        & a
+            display: block
+            line-height: 65px
+            color: $light-beige
+            text-decoration: none
+            font-size: 3vh
+            font-weight: 400
+            letter-spacing: 1px
+            transition: .4s
+            & i
+                width: 40px
+                border-right: solid $light-beige 2px
+                margin-right: 20px
+                transition: .3s
