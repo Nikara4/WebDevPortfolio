@@ -150,6 +150,7 @@ section.profil h1.title1 {
 }
 
 section.profil h1.title1::after {
+  content: "";
   position: absolute;
   top: 98%;
   left: 50%;
@@ -157,7 +158,6 @@ section.profil h1.title1::after {
           transform: translateX(-50%);
   width: 30%;
   margin: 0 auto;
-  content: "";
   border-bottom: 2px solid #ACA18C;
 }
 
@@ -285,6 +285,7 @@ div.section-wrap .skills h1.title1 {
 }
 
 div.section-wrap .skills h1.title1::after {
+  content: "";
   position: absolute;
   top: 98%;
   left: 50%;
@@ -292,7 +293,6 @@ div.section-wrap .skills h1.title1::after {
           transform: translateX(-50%);
   width: 30%;
   margin: 0 auto;
-  content: "";
   border-bottom: 2px solid #ACA18C;
 }
 
@@ -430,6 +430,7 @@ section.projects h1.title1 {
 }
 
 section.projects h1.title1::after {
+  content: "";
   position: absolute;
   top: 98%;
   left: 50%;
@@ -437,7 +438,6 @@ section.projects h1.title1::after {
           transform: translateX(-50%);
   width: 30%;
   margin: 0 auto;
-  content: "";
   border-bottom: 2px solid #ACA18C;
 }
 
