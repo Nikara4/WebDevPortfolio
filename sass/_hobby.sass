@@ -5,7 +5,7 @@ section.hobby
     +text-center()
     color: $light-beige
     & h1.hobbyTitle
-        line-height: 7.5vh
+        line-height: 8vh
         font-size: 4.8em
         font-weight: 400
         color: $light-beige
@@ -17,8 +17,8 @@ section.hobby
         +page-center()
         width: 100%
         & .item
-            background-position: center
-            background-repeat: no-repeat
+            background-position: $bgc-position
+            background-repeat: $bgc-repeat
             background-size: 100%
             transition: .7s
             &:hover
@@ -34,7 +34,7 @@ section.hobby
             & p
                 +text-center()
                 line-height: 41vh
-                font-size: 3.6em
+                font-size: 4em
                 transition: .7s
                 opacity: 0
                 &:hover

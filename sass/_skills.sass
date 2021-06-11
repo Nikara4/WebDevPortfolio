@@ -2,11 +2,9 @@ div.section-wrap
     width: 100%
     background-color: $extra-light-beige
     & .skills
-        +flexbox(row)
-        flex-wrap: wrap
-        flex-grow: 1
+        +flexbox(row, wrap, 1)
         position: relative
-        max-width: 72%
+        max-width: 50%
         +page-center()
         margin-bottom: 3.5vh
         padding-top: 3.5vh
@@ -15,15 +13,13 @@ div.section-wrap
             &::after
                 +h1-title1-underscore()
         & .wrap
-            +flexbox(row)
-            flex-wrap: wrap
-            flex-grow: 1
+            +flexbox(row, wrap, 1)
+            justify-content: center
             margin: 3vh auto
             +text-center()
-            max-width: 56vw
-            &:nth-child(3)
-                max-width: 50vw
-                margin-bottom: 0
+            max-width: 47vw
+            &:nth-of-type(2)
+                max-width: 45vw
         & .skillMain
             width: 33%
             color: $faded-blue
@@ -40,9 +36,8 @@ div.section-wrap
             text-transform: uppercase
         & .image
             width: 33%
+            margin: 1vh auto
             & img
                 width: 30%
-                margin-bottom: 1vh
-            &:last-child
-                width: 50%
-                margin: 0 auto
+            &:nth-of-type(7), &:nth-of-type(8)
+                width: 40%

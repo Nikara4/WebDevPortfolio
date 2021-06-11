@@ -11,14 +11,14 @@ section.contact
         font-weight: 400
         color: $light-beige
         &::after
+            content: ""
             +position-absolute(absolute, 98%, 50%)
             transform: translateX(-50%)
             width: 35%
             +page-center()
-            content: ""
             border-bottom: 2px solid $light-beige
     & .wrap
-        +flexbox(row)
+        +flexbox(row, wrap, 0)
         max-width: 60%
         margin: 5vh auto
         & form
@@ -29,8 +29,10 @@ section.contact
                 margin-bottom: 2vh
                 color: $dark-beige
                 font-size: 1.5em
-                padding: 0.7vw
+                padding: 1vw
                 font-family: $open-sans-font
+                background-color: $extra-light-beige
+                border: 1px solid black
             & input
                 height: 5vh
             & textarea

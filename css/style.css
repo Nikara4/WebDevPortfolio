@@ -2,13 +2,7 @@
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
+          box-sizing: border-box;
 }
 
 body {
@@ -39,7 +33,6 @@ header .welcome {
   background-color: #ACA18C;
   height: 20vh;
   width: 47vw;
-  text-align: left;
   color: #F0EDE1;
 }
 
@@ -56,7 +49,6 @@ header h2 {
   padding-left: 2vw;
   font-size: 4.5vh;
   padding-top: 1vh;
-  border-bottom: none;
 }
 
 nav {
@@ -74,13 +66,18 @@ nav ul {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-line-pack: center;
-  align-content: center;
+      align-content: center;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
   list-style: none;
 }
 
@@ -94,12 +91,13 @@ nav ul a {
   font-size: 1.7vh;
   font-weight: 400;
   letter-spacing: 1px;
-  -webkit-transition: .2s;
-  transition: .2s;
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 
 nav ul a:hover {
-  color: #47474A;
+  color: #ACA18C;
+  background-color: #F0EDE1;
 }
 
 nav ul a i.start {
@@ -123,29 +121,29 @@ section.profil {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-line-pack: center;
-  align-content: center;
+      align-content: center;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   position: relative;
   max-width: 60vw;
-  margin: 4vh auto 6vh auto;
+  margin: 6vh auto 6vh auto;
 }
 
 section.profil h1.title1 {
   position: relative;
   -ms-flex-preferred-size: 100%;
-  flex-basis: 100%;
+      flex-basis: 100%;
   text-align: center;
-  line-height: 80px;
+  line-height: 70px;
   font-size: 4.8em;
   font-weight: 400;
   color: #ACA18C;
@@ -156,7 +154,7 @@ section.profil h1.title1::after {
   top: 98%;
   left: 50%;
   -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 30%;
   margin: 0 auto;
   content: "";
@@ -165,14 +163,14 @@ section.profil h1.title1::after {
 
 section.profil div {
   -ms-flex-preferred-size: 50%;
-  flex-basis: 50%;
+      flex-basis: 50%;
   margin-top: 2%;
 }
 
 section.profil .img {
   -webkit-box-ordinal-group: 2;
-  -ms-flex-order: 1;
-  order: 1;
+      -ms-flex-order: 1;
+          order: 1;
 }
 
 section.profil .img img {
@@ -189,13 +187,18 @@ section.profil .about {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-line-pack: center;
-  align-content: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
   max-width: 47%;
 }
 
@@ -204,13 +207,13 @@ section.profil .about p {
   font-weight: 300;
   color: #ACA18C;
   text-align: justify;
-  margin-top: 7px;
+  margin-top: 10px;
 }
 
 section.profil .about button {
   max-width: 60%;
   background-color: #ACA18C;
-  margin-top: 9%;
+  margin-top: 10%;
   border: none;
   border-radius: 1000px;
   -webkit-transition: .3s;
@@ -233,9 +236,9 @@ section.profil .about button a:hover {
 
 section.profil .about button:hover {
   -webkit-transform: scale(1.075);
-  transform: scale(1.075);
+          transform: scale(1.075);
   -webkit-box-shadow: inset 0 0 0 2px #ACA18C;
-  box-shadow: inset 0 0 0 2px #ACA18C;
+          box-shadow: inset 0 0 0 2px #ACA18C;
   background-color: transparent;
   color: #ACA18C;
 }
@@ -251,20 +254,20 @@ div.section-wrap .skills {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-line-pack: center;
-  align-content: center;
+      align-content: center;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   position: relative;
-  max-width: 72%;
+  max-width: 50%;
   margin: 0 auto;
   margin-bottom: 3.5vh;
   padding-top: 3.5vh;
@@ -273,9 +276,9 @@ div.section-wrap .skills {
 div.section-wrap .skills h1.title1 {
   position: relative;
   -ms-flex-preferred-size: 100%;
-  flex-basis: 100%;
+      flex-basis: 100%;
   text-align: center;
-  line-height: 80px;
+  line-height: 70px;
   font-size: 4.8em;
   font-weight: 400;
   color: #ACA18C;
@@ -286,7 +289,7 @@ div.section-wrap .skills h1.title1::after {
   top: 98%;
   left: 50%;
   -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 30%;
   margin: 0 auto;
   content: "";
@@ -299,26 +302,28 @@ div.section-wrap .skills .wrap {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-line-pack: center;
-  align-content: center;
+      align-content: center;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 3vh auto;
   text-align: center;
-  max-width: 56vw;
+  max-width: 47vw;
 }
 
-div.section-wrap .skills .wrap:nth-child(3) {
-  max-width: 50vw;
-  margin-bottom: 0;
+div.section-wrap .skills .wrap:nth-of-type(2) {
+  max-width: 45vw;
 }
 
 div.section-wrap .skills .skillMain {
@@ -345,16 +350,15 @@ div.section-wrap .skills h3.title {
 
 div.section-wrap .skills .image {
   width: 33%;
+  margin: 1vh auto;
 }
 
 div.section-wrap .skills .image img {
   width: 30%;
-  margin-bottom: 1vh;
 }
 
-div.section-wrap .skills .image:last-child {
-  width: 50%;
-  margin: 0 auto;
+div.section-wrap .skills .image:nth-of-type(7), div.section-wrap .skills .image:nth-of-type(8) {
+  width: 40%;
 }
 
 section.projects {
@@ -363,27 +367,26 @@ section.projects {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-line-pack: center;
-  align-content: center;
+      align-content: center;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   max-width: 63vw;
-  margin: 0 auto;
   text-align: center;
-  margin-bottom: 10vh;
+  margin: 10vh auto;
 }
 
 section.projects .project {
   width: 33%;
-  margin-top: 8vh;
+  margin-top: 6vh;
 }
 
 section.projects .project h3 {
@@ -404,23 +407,23 @@ section.projects .project p {
 
 section.projects .project img {
   width: 70%;
-  margin-bottom: 6vh;
+  margin-bottom: 4vh;
   -webkit-transition: .3s;
   transition: .3s;
 }
 
 section.projects .project img:hover {
   -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+          transform: scale(1.1);
   cursor: pointer;
 }
 
 section.projects h1.title1 {
   position: relative;
   -ms-flex-preferred-size: 100%;
-  flex-basis: 100%;
+      flex-basis: 100%;
   text-align: center;
-  line-height: 80px;
+  line-height: 70px;
   font-size: 4.8em;
   font-weight: 400;
   color: #ACA18C;
@@ -431,7 +434,7 @@ section.projects h1.title1::after {
   top: 98%;
   left: 50%;
   -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 30%;
   margin: 0 auto;
   content: "";
@@ -446,7 +449,7 @@ section.hobby {
 }
 
 section.hobby h1.hobbyTitle {
-  line-height: 7.5vh;
+  line-height: 8vh;
   font-size: 4.8em;
   font-weight: 400;
   color: #F0EDE1;
@@ -457,9 +460,9 @@ section.hobby .wrapHobby {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
-  grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
   -ms-grid-rows: (1fr)[2];
-  grid-template-rows: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
   margin: 0 auto;
   width: 100%;
 }
@@ -495,7 +498,7 @@ section.hobby .wrapHobby .item:nth-of-type(4) {
 section.hobby .wrapHobby .item p {
   text-align: center;
   line-height: 41vh;
-  font-size: 3.6em;
+  font-size: 4em;
   -webkit-transition: .7s;
   transition: .7s;
   opacity: 0;
@@ -523,14 +526,14 @@ section.contact h1.title1 {
 }
 
 section.contact h1.title1::after {
+  content: "";
   position: absolute;
   top: 98%;
   left: 50%;
   -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 35%;
   margin: 0 auto;
-  content: "";
   border-bottom: 2px solid #F0EDE1;
 }
 
@@ -540,13 +543,18 @@ section.contact .wrap {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-line-pack: center;
-  align-content: center;
+      align-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
   max-width: 60%;
   margin: 5vh auto;
 }
@@ -556,14 +564,15 @@ section.contact .wrap form {
   width: 40%;
 }
 
-section.contact .wrap form input,
-section.contact .wrap form textarea {
+section.contact .wrap form input, section.contact .wrap form textarea {
   width: 85%;
   margin-bottom: 2vh;
   color: #47474A;
   font-size: 1.5em;
-  padding: 0.7vw;
+  padding: 1vw;
   font-family: "Open Sans", arial, sans-serif;
+  background-color: #F1F0E7;
+  border: 1px solid black;
 }
 
 section.contact .wrap form input {
@@ -591,9 +600,9 @@ section.contact .wrap form button {
 
 section.contact .wrap form button:hover {
   -webkit-transform: scale(1.075);
-  transform: scale(1.075);
+          transform: scale(1.075);
   -webkit-box-shadow: inset 0 0 0 2px #F0EDE1;
-  box-shadow: inset 0 0 0 2px #F0EDE1;
+          box-shadow: inset 0 0 0 2px #F0EDE1;
   background-color: transparent;
   cursor: pointer;
 }
@@ -604,13 +613,13 @@ section.contact .wrap .socials {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: start;
-  -ms-flex-pack: start;
-  justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -ms-flex-line-pack: end;
-  align-content: flex-end;
+      align-content: flex-end;
   width: 40%;
   text-align: left;
   color: #F0EDE1;
@@ -622,8 +631,7 @@ section.contact .wrap .socials i {
   font-size: 1.5em;
 }
 
-section.contact .wrap .socials a,
-section.contact .wrap .socials span {
+section.contact .wrap .socials a, section.contact .wrap .socials span {
   padding-left: 1.4vw;
   color: #F0EDE1;
   text-decoration: none;
@@ -631,8 +639,7 @@ section.contact .wrap .socials span {
   transition: 0.3s;
 }
 
-section.contact .wrap .socials a:hover,
-section.contact .wrap .socials span:hover {
+section.contact .wrap .socials a:hover, section.contact .wrap .socials span:hover {
   color: #ACA18C;
 }
 
@@ -664,5 +671,4 @@ footer a {
 footer a:hover {
   color: #F0EDE1;
 }
-
 /*# sourceMappingURL=style.css.map */

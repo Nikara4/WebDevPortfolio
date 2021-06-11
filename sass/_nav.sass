@@ -4,7 +4,7 @@ nav
     background-color: $medium-beige
     z-index: 1
     & ul
-        +flexbox(column)
+        +flexbox(column, no-wrap, 0)
         list-style: none
         & a
             display: block
@@ -16,9 +16,10 @@ nav
             font-size: 1.7vh
             font-weight: 400
             letter-spacing: 1px
-            transition: .2s
+            transition: .4s
             &:hover
-                color: $dark-beige
+                color: $medium-beige
+                background-color: $light-beige
             & i.start
                 line-height: 65px
                 font-size: 3.5em

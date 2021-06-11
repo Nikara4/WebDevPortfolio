@@ -6,8 +6,8 @@ header
     max-width: 1920px
     background-image: url('../img/headerphoto.jpg')
     background-size: cover
-    background-position: center
-    background-repeat: no-repeat
+    background-position: $bgc-position
+    background-repeat: $bgc-repeat
     background-attachment: fixed
     font-family: $montserrat-font
     & .welcome
@@ -17,7 +17,6 @@ header
         background-color: $medium-beige
         height: 20vh
         width: 47vw
-        text-align: left
         color: $light-beige
     & h1
         +header-titles()
@@ -28,4 +27,3 @@ header
         +header-titles()
         font-size: 4.5vh
         padding-top: 1vh
-        border-bottom: none

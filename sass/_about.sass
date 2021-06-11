@@ -1,10 +1,8 @@
 section.profil
-    +flexbox(row)
-    flex-wrap: wrap
-    flex-grow: 1
+    +flexbox(row, wrap, 1)
     position: relative
     max-width: 60vw
-    margin: 4vh auto 6vh auto
+    margin: 6vh auto 6vh auto
     & h1.title1
         +h1-title1()
         &::after
@@ -21,18 +19,18 @@ section.profil
             margin: 7%
             margin-left: 15%
     & .about
-        +flexbox(column)
+        +flexbox(column, wrap, 0)
         max-width: 47%
         & p
             font-size: 1.8em
             font-weight: 300
             color: $medium-beige
             text-align: justify
-            margin-top: 7px
+            margin-top: 10px
         & button
             max-width: 60%
             background-color: $medium-beige
-            margin-top: 9%
+            margin-top: 10%
             border: none
             border-radius: 1000px
             transition: .3s

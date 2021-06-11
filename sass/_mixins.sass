@@ -18,25 +18,27 @@
     top: $posY
     left: $posX
 
-=flexbox($position)
+=flexbox($position, $wrap, $grow)
     display: flex
     flex-direction: $position
     justify-content: space-between
     align-content: center
+    flex-wrap: $wrap
+    flex-grow: $grow
 
 =h1-title1()
     position: relative
     flex-basis: 100%
     +text-center()
-    line-height: 80px
+    line-height: 70px
     font-size: 4.8em
     font-weight: 400
     color: $medium-beige
 
 =h1-title1-underscore()
+    content: ""
     +position-absolute(absolute, 98%, 50%)
     transform: translateX(-50%)
     width: 30%
     +page-center()
-    content: ""
     border-bottom: 2px solid $medium-beige
