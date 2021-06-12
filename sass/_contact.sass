@@ -73,3 +73,103 @@ section.contact
                 transition: 0.3s
                 &:hover
                     color: $medium-beige
+
+@media (max-width: 1366px)
+    section.contact
+        & .wrap
+            max-width: 90%
+
+@media (orientation: portrait) and (max-width: 768px)
+    section.contact
+        & h1.title1
+            font-size: 3.5em
+            &::after
+                +h1-title1-underscore-media()
+        & .wrap
+            +flexbox(column, wrap, 0)
+            max-width: 100%
+            margin: 5vh auto
+            & form
+                order: 1
+                width: 80%
+                margin-top: 5vh
+                +flexbox(column, wrap, 0)
+                & input, textarea
+                    margin-bottom: 2vh
+                & input
+                    height: 5vh
+                & textarea
+                    height: 25vh
+                & button
+                    line-height: 5vh
+                    &:hover
+                        transform: none
+            & .socials
+                order: 0
+                width: 35%
+                margin: 0 auto
+                font-size: 2em
+                line-height: 45px
+                & .social
+                    +flexbox(row, wrap, 0)
+                    justify-content: stretch
+                & i
+                    line-height: 1.5
+                    font-size: 2em
+                & a:hover
+                    color: $light-beige
+
+@media (orientation: portrait) and (max-width: 414px)
+    section.contact
+        & .wrap
+            & form
+                & button
+                    font-size: 2em
+            & .socials
+                width: 65%
+                font-size: 1.5em
+                & i
+                    line-height: 2
+                    font-size: 1.5em
+                    padding-right: 1vh
+
+@media (orientation: landscape) and (max-width: 832px)
+    section.contact
+        & h1.title1
+            font-size: 3em
+            &::after
+                +h1-title1-underscore-media()
+        & .wrap
+            +flexbox(column, wrap, 0)
+            max-width: 90%
+            margin: 5vh auto
+            & form
+                order: 1
+                width: 70%
+                margin-top: 5vh
+                +flexbox(column, wrap, 0)
+                & input, textarea
+                    margin-bottom: 4vh
+                & input
+                    height: 10vh
+                & textarea
+                    height: 35vh
+                & button
+                    line-height: 8vh
+                    font-size: 2.4em
+                    &:hover
+                        transform: none
+            & .socials
+                order: 0
+                width: 50%
+                margin: 0 auto
+                font-size: 1.7em
+                line-height: 45px
+                & .social
+                    +flexbox(row, wrap, 0)
+                    justify-content: stretch
+                & i
+                    line-height: 1.5
+                    font-size: 1.7em
+                & a:hover
+                    color: $light-beige

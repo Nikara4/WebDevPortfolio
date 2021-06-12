@@ -394,7 +394,7 @@ section.profil h1.title1::after {
           transform: translateX(-50%);
   width: 30%;
   margin: 0 auto;
-  border-bottom: 2px solid #ACA18C;
+  border-bottom: 1px solid #ACA18C;
 }
 
 section.profil div {
@@ -720,7 +720,7 @@ div.section-wrap .skills h1.title1::after {
           transform: translateX(-50%);
   width: 30%;
   margin: 0 auto;
-  border-bottom: 2px solid #ACA18C;
+  border-bottom: 1px solid #ACA18C;
 }
 
 div.section-wrap .skills .wrap {
@@ -977,7 +977,7 @@ section.projects h1.title1::after {
           transform: translateX(-50%);
   width: 30%;
   margin: 0 auto;
-  border-bottom: 2px solid #ACA18C;
+  border-bottom: 1px solid #ACA18C;
 }
 
 @media (orientation: portrait) and (max-width: 1024px) {
@@ -1111,7 +1111,7 @@ section.projects h1.title1::after {
     margin-bottom: 3vh;
   }
   section.projects h1.title1 {
-    font-size: 3.5em;
+    font-size: 3em;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
@@ -1185,6 +1185,69 @@ section.hobby .wrapHobby .item p {
 section.hobby .wrapHobby .item p:hover {
   opacity: 1;
   background-color: rgba(86, 115, 147, 0.7);
+}
+
+@media (max-width: 1155px) {
+  section.hobby .wrapHobby .item:hover {
+    background-size: 100%;
+  }
+  section.hobby .wrapHobby .item p {
+    text-align: left;
+    padding-left: 5vw;
+    line-height: 24vh;
+    font-size: 3em;
+    text-shadow: 2px 2px 5px #000;
+    opacity: 1;
+  }
+  section.hobby .wrapHobby .item p:hover {
+    background-color: transparent;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 768px) {
+  section.hobby h1.hobbyTitle {
+    font-size: 3.5em;
+    line-height: 6vh;
+  }
+  section.hobby .wrapHobby .item p {
+    text-align: center;
+    padding-left: 0;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 414px) {
+  section.hobby h1.hobbyTitle {
+    font-size: 3.5em;
+    line-height: 7vh;
+  }
+  section.hobby .wrapHobby {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: (1fr)[1];
+        grid-template-rows: repeat(1, 1fr);
+  }
+  section.hobby .wrapHobby .item p {
+    line-height: 23vh;
+    font-size: 2.2em;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 832px) {
+  section.hobby h1.hobbyTitle {
+    font-size: 3em;
+    line-height: 10vh;
+  }
+  section.hobby .wrapHobby {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: (1fr)[1];
+        grid-template-rows: repeat(1, 1fr);
+  }
+  section.hobby .wrapHobby .item p {
+    text-align: center;
+    line-height: 50vh;
+    font-size: 2.7em;
+  }
 }
 
 section.contact {
@@ -1319,6 +1382,244 @@ section.contact .wrap .socials a, section.contact .wrap .socials span {
 
 section.contact .wrap .socials a:hover, section.contact .wrap .socials span:hover {
   color: #ACA18C;
+}
+
+@media (max-width: 1366px) {
+  section.contact .wrap {
+    max-width: 90%;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 768px) {
+  section.contact h1.title1 {
+    font-size: 3.5em;
+  }
+  section.contact h1.title1::after {
+    width: 80%;
+  }
+  section.contact .wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    max-width: 100%;
+    margin: 5vh auto;
+  }
+  section.contact .wrap form {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 80%;
+    margin-top: 5vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+  }
+  section.contact .wrap form input, section.contact .wrap form textarea {
+    margin-bottom: 2vh;
+  }
+  section.contact .wrap form input {
+    height: 5vh;
+  }
+  section.contact .wrap form textarea {
+    height: 25vh;
+  }
+  section.contact .wrap form button {
+    line-height: 5vh;
+  }
+  section.contact .wrap form button:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+  section.contact .wrap .socials {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    width: 35%;
+    margin: 0 auto;
+    font-size: 2em;
+    line-height: 45px;
+  }
+  section.contact .wrap .socials .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+  }
+  section.contact .wrap .socials i {
+    line-height: 1.5;
+    font-size: 2em;
+  }
+  section.contact .wrap .socials a:hover {
+    color: #F0EDE1;
+  }
+}
+
+@media (orientation: portrait) and (max-width: 414px) {
+  section.contact .wrap form button {
+    font-size: 2em;
+  }
+  section.contact .wrap .socials {
+    width: 65%;
+    font-size: 1.5em;
+  }
+  section.contact .wrap .socials i {
+    line-height: 2;
+    font-size: 1.5em;
+    padding-right: 1vh;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 832px) {
+  section.contact h1.title1 {
+    font-size: 3em;
+  }
+  section.contact h1.title1::after {
+    width: 80%;
+  }
+  section.contact .wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    max-width: 90%;
+    margin: 5vh auto;
+  }
+  section.contact .wrap form {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 70%;
+    margin-top: 5vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+  }
+  section.contact .wrap form input, section.contact .wrap form textarea {
+    margin-bottom: 4vh;
+  }
+  section.contact .wrap form input {
+    height: 10vh;
+  }
+  section.contact .wrap form textarea {
+    height: 35vh;
+  }
+  section.contact .wrap form button {
+    line-height: 8vh;
+    font-size: 2.4em;
+  }
+  section.contact .wrap form button:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
+  section.contact .wrap .socials {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1.7em;
+    line-height: 45px;
+  }
+  section.contact .wrap .socials .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+  }
+  section.contact .wrap .socials i {
+    line-height: 1.5;
+    font-size: 1.7em;
+  }
+  section.contact .wrap .socials a:hover {
+    color: #F0EDE1;
+  }
 }
 
 footer {

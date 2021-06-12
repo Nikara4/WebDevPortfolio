@@ -40,3 +40,53 @@ section.hobby
                 &:hover
                     opacity: 1
                     background-color: rgba(86, 115, 147, 0.7)
+
+@media (max-width: 1155px)
+    section.hobby
+        & .wrapHobby
+            & .item
+                &:hover
+                    background-size: 100%
+                & p
+                    text-align: left
+                    padding-left: 5vw
+                    line-height: 24vh
+                    font-size: 3em
+                    text-shadow: 2px 2px 5px #000
+                    opacity: 1
+                    &:hover
+                        background-color: transparent
+
+@media (orientation: portrait) and (max-width: 768px)
+    section.hobby
+        & h1.hobbyTitle
+            font-size: 3.5em
+            line-height: 6vh
+        & .wrapHobby .item p
+            +text-center()
+            padding-left: 0
+
+@media (orientation: portrait) and (max-width: 414px)
+    section.hobby
+        & h1.hobbyTitle
+            font-size: 3.5em
+            line-height: 7vh
+        & .wrapHobby
+            grid-template-columns: repeat(1, 1fr)
+            grid-template-rows: repeat(1, 1fr)
+            & .item p
+                line-height: 23vh
+                font-size: 2.2em
+
+@media (orientation: landscape) and (max-width: 832px)
+    section.hobby
+        & h1.hobbyTitle
+            font-size: 3em
+            line-height: 10vh
+        & .wrapHobby
+            grid-template-columns: repeat(1, 1fr)
+            grid-template-rows: repeat(1, 1fr)
+            & .item p
+                +text-center()
+                line-height: 50vh
+                font-size: 2.7em
