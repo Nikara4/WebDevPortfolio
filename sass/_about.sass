@@ -28,7 +28,7 @@ section.profil
             text-align: justify
             margin-top: 10px
         & button
-            max-width: 70%
+            max-width: 100%
             background-color: $medium-beige
             margin-top: 10%
             border: none
@@ -50,27 +50,41 @@ section.profil
                 background-color: transparent
                 color: $medium-beige
 
-@media (orientation: portrait) and (max-width: 768px)
+@media (orientation: portrait) and (max-width: 1024px)
     section.profil
         +flexbox(column, wrap, 1)
-        max-width: 100vw
-        margin: 6vh auto 6vh auto
+        max-width: 80vw
+        margin: 6vh 0
         & .img
             +flexbox(row, nowrap, 0)
             justify-content: center
             order: 0
             & img
-                width: 40%
+                width: 50%
                 margin: 6% 0 5% 0
         & .about
             max-width: 80%
             margin: 0 auto
             & p
-                font-size: 2em
+                font-size: 2.8em
             & button
                 min-width: 80%
                 margin: 8% auto
         & h1.title1::after
+            +h1-title1-underscore-media()
+
+@media (orientation: portrait) and (max-width: 768px)
+    section.profil
+        max-width: 100vw
+        margin: 6vh auto 6vh auto
+        & .img img
+            width: 40%
+        & .about p
+            font-size: 2em
+        & h1.title1
+            font-size: 3.5em
+            align-self: center
+            &::after
             +h1-title1-underscore-media()
 
 @media (orientation: portrait) and (max-width: 414px)
@@ -84,3 +98,40 @@ section.profil
                 font-size: 1.6em
             & button a
                 font-size: 1.7em
+
+@media (orientation: landscape) and (max-width: 1024px)
+    section.profil
+        +flexbox(column, wrap, 1)
+        max-width: 80vw
+        margin: 6vh 0
+        & .img
+            +flexbox(row, nowrap, 0)
+            justify-content: center
+            order: 0
+            & img
+                margin: 6% 0 5% 0
+        & .about
+            max-width: 80%
+            margin: 0 auto
+            & p
+                font-size: 2.5em
+            & button
+                min-width: 70%
+                margin: 8% auto
+        & h1.title1::after
+            +h1-title1-underscore-media()
+
+@media (orientation: landscape) and (max-width: 832px)
+    section.profil
+        max-width: 100vw
+        & .img img
+            width: 40%
+        & .about p
+            font-size: 2em
+        & .about button a
+            font-size: 2em
+            line-height: 10vh
+        & h1.title1
+            font-size: 3em
+            & h1.title1::after
+                +h1-title1-underscore-media()

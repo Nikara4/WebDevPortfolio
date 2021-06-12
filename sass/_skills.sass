@@ -41,3 +41,81 @@ div.section-wrap
                 width: 30%
             &:nth-of-type(7), &:nth-of-type(8)
                 width: 40%
+
+@media (orientation: portrait) and (max-width: 1024px)
+    div.section-wrap .skills
+        max-width: 75%
+        margin: 5%
+        & h1.title1
+            font-size: 4.8em
+            &::after
+                +h1-title1-underscore-media()
+        & .wrap
+            max-width: 95vw
+            &:nth-of-type(2)
+                max-width: 100vw
+        & h3.title
+            font-size: 3em
+        & .image img
+            width: 40%
+            &:nth-of-type(7), &:nth-of-type(8)
+                width: 60%
+
+@media (orientation: portrait) and (max-width: 768px)
+    div.section-wrap .skills
+        max-width: 85%
+        +page-center()
+        & h1.title1
+            font-size: 3.5em
+        & .wrap
+            max-width: 90vw
+            &:nth-of-type(2)
+                max-width: 100vw
+        & .skillMain
+            & i
+                font-size: 10em
+            &:nth-of-type(3) i
+                line-height: 154px
+        & h3.title
+            font-size: 2em
+        & .image img
+            width: 50%
+            &:nth-of-type(7), &:nth-of-type(8)
+                width: 60%
+
+@media (orientation: landscape) and (max-width: 1024px)
+    div.section-wrap .skills
+        max-width: 75%
+        margin: 3%
+        & h1.title1
+            font-size: 4.8em
+            &::after
+                +h1-title1-underscore-media()
+        & .wrap
+            max-width: 95vw
+            &:nth-of-type(2)
+                max-width: 100vw
+        & h3.title
+            font-size: 3em
+        & .image img
+            width: 40%
+            &:nth-of-type(7), &:nth-of-type(8)
+                width: 60%
+
+@media (orientation: landscape) and (max-width: 832px)
+    div.section-wrap .skills
+        margin: 5vh auto
+        & h1.title1
+            font-size: 3em
+            margin-bottom: 5vh
+        & h3.title
+            font-size: 2em
+        & .image img
+            width: 35%
+            &:nth-of-type(7), &:nth-of-type(8)
+                width: 55%
+        & .skillMain
+            & i
+                font-size: 10em
+            &:nth-of-type(3) i
+                line-height: 154px
