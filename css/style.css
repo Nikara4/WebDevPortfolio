@@ -10,6 +10,7 @@ body {
   font-size: 10px;
 }
 
+/*! header */
 header {
   margin: 0 auto;
   height: 100vh;
@@ -39,9 +40,14 @@ header .welcome {
       align-content: center;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   position: absolute;
   top: 55%;
   left: 0;
@@ -74,26 +80,6 @@ header h2 {
     background-image: url("../img/headerphoto-tel.jpg");
   }
   header .welcome {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-flex: 1;
-        -ms-flex-positive: 1;
-            flex-grow: 1;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -ms-flex-line-pack: stretch;
         align-content: stretch;
     padding: 0;
@@ -126,8 +112,15 @@ header h2 {
   header .welcome {
     width: 65%;
   }
+  header .welcome h1 {
+    font-size: 5.5em;
+  }
+  header .welcome h2 {
+    font-size: 3.5em;
+  }
 }
 
+/*! nav */
 nav {
   display: block;
   position: absolute;
@@ -213,10 +206,9 @@ nav.mobile .menu-mobile.show {
 }
 
 aside {
-  display: none;
   z-index: 1;
   position: absolute;
-  left: 0;
+  left: -70vw;
   top: 0;
   padding: 10vh 7vw;
   width: 70vw;
@@ -252,7 +244,7 @@ aside ul a {
   line-height: 65px;
   color: #F0EDE1;
   text-decoration: none;
-  font-size: 2vh;
+  font-size: 3vh;
   font-weight: 400;
   letter-spacing: 1px;
   -webkit-transition: .4s;
@@ -267,10 +259,7 @@ aside ul a i {
   transition: .3s;
 }
 
-aside.show {
-  display: block;
-}
-
+/*! media queries for nav */
 @media (max-width: 1200px) {
   nav {
     width: 10vw;
@@ -294,30 +283,34 @@ aside.show {
   }
 }
 
-@media (orientation: portrait) and (min-width: 768px) {
-  nav {
-    display: none;
-  }
-  nav.mobile {
-    display: block;
-  }
-  nav ul a {
-    line-height: 70px;
-  }
-  nav ul a i.start {
-    line-height: 70px;
-  }
-  nav ul li:nth-of-type(1) a {
-    height: 70px;
-  }
-}
-
 @media (max-width: 832px) {
   nav {
     display: none;
   }
   nav.mobile {
     display: block;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 768px) {
+  nav.mobile {
+    left: 3%;
+  }
+  nav.mobile .menu-mobile {
+    font-size: 4em;
+    color: #ACA18C;
+  }
+  aside {
+    padding: 15vh 7vw;
+    left: -50vw;
+    width: 50vw;
+  }
+  aside ul a {
+    line-height: 100px;
+    font-size: 3.3vh;
+  }
+  aside ul a i {
+    width: 70px;
   }
 }
 
@@ -442,7 +435,7 @@ section.profil .about p {
 }
 
 section.profil .about button {
-  max-width: 60%;
+  max-width: 70%;
   background-color: #ACA18C;
   margin-top: 10%;
   border: none;

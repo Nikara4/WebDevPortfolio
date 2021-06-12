@@ -1,3 +1,4 @@
+/*! header */
 header
     +page-center()
     height: 100vh
@@ -11,7 +12,9 @@ header
     background-attachment: fixed
     font-family: $montserrat-font
     & .welcome
-        +flexbox(column, nowrap, 1)
+        +flexbox(column, nowrap, 0)
+        justify-content: center
+        flex-shrink: 0
         +position-absolute(absolute, 55%, 0)
         z-index: 1
         padding: 2vh 5vw 2vh 0
@@ -34,8 +37,6 @@ header
     header
         background-image: url('../img/headerphoto-tel.jpg')
         & .welcome
-            +flexbox(column, nowrap, 1)
-            justify-content: center
             align-content: stretch
             padding: 0
             top: 62%
@@ -59,3 +60,7 @@ header
 @media (orientation: landscape) and (max-width: 1416px)
     header .welcome
         width: 65%
+        & h1
+            font-size: 5.5em
+        & h2
+            font-size: 3.5em
