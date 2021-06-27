@@ -240,6 +240,8 @@ nav.mobile .menu-mobile {
 
 nav.mobile .menu-mobile.show {
   color: #F0EDE1;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 aside {
@@ -299,6 +301,8 @@ aside ul a i {
 aside.show {
   left: 0;
   position: fixed;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 /*! media queries for nav */
