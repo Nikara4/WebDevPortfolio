@@ -211,12 +211,14 @@ div.wrapper-nav nav.scrolling {
   left: 90%;
 }
 
-div.wrapper-nav nav ul li.active {
+div.wrapper-nav nav ul li.active a {
   background-color: #F0EDE1;
+  color: #ACA18C;
 }
 
-div.wrapper-nav nav ul li.active:hover {
+div.wrapper-nav nav ul li.active a:hover {
   background-color: #ACA18C;
+  color: #F0EDE1;
 }
 
 nav.mobile {

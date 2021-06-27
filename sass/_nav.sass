@@ -15,10 +15,12 @@ div.wrapper-nav
             transform: rotate(180deg)
         &.scrolling
             +position-absolute(fixed, 0, 90%)
-        & ul li.active
+        & ul li.active a
             background-color: $light-beige
+            color: $medium-beige
             &:hover
                 background-color: $medium-beige
+                color: $light-beige
 
 nav.mobile
     display: none
