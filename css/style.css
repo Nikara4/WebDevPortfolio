@@ -133,17 +133,25 @@ header h2 {
 }
 
 /*! nav */
-nav {
+div.wrapper-nav {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+
+div.wrapper-nav nav {
   display: block;
   position: absolute;
-  top: 93%;
+  top: -6.8%;
   left: 90%;
   width: 7vw;
   background-color: #ACA18C;
   z-index: 1;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
-nav ul {
+div.wrapper-nav nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -164,7 +172,7 @@ nav ul {
   list-style: none;
 }
 
-nav ul a {
+div.wrapper-nav nav ul a {
   display: block;
   line-height: 65px;
   color: #F0EDE1;
@@ -178,24 +186,37 @@ nav ul a {
   transition: .4s;
 }
 
-nav ul a:hover {
+div.wrapper-nav nav ul a:hover {
   color: #ACA18C;
   background-color: #F0EDE1;
 }
 
-nav ul a i.start {
+div.wrapper-nav nav ul a i.start {
   line-height: 65px;
   font-size: 3.5em;
 }
 
-nav ul li:nth-of-type(1) a {
+div.wrapper-nav nav ul li:nth-of-type(1) a {
   height: 65px;
 }
 
-nav.scrolling {
+div.wrapper-nav nav ul li:nth-of-type(1) a.show {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+div.wrapper-nav nav.scrolling {
   position: fixed;
-  top: 10%;
+  top: 0;
   left: 90%;
+}
+
+div.wrapper-nav nav ul li.active {
+  background-color: #F0EDE1;
+}
+
+div.wrapper-nav nav ul li.active:hover {
+  background-color: #ACA18C;
 }
 
 nav.mobile {
@@ -271,32 +292,39 @@ aside ul a i {
   transition: .3s;
 }
 
+aside.show {
+  left: 0;
+}
+
 /*! media queries for nav */
 @media (max-width: 1200px) {
-  nav {
+  div.wrapper-nav nav {
     width: 10vw;
     left: 85%;
   }
-  nav ul a {
+  div.wrapper-nav nav ul a {
     line-height: 95px;
   }
-  nav ul a i.start {
+  div.wrapper-nav nav ul a i.start {
     line-height: 95px;
   }
-  nav ul li:nth-of-type(1) a {
+  div.wrapper-nav nav ul li:nth-of-type(1) a {
     height: 95px;
   }
 }
 
 @media (orientation: portrait) and (max-width: 1024px) {
-  nav {
+  div.wrapper-nav nav {
     width: 15vw;
     left: 80%;
   }
 }
 
 @media (max-width: 832px) {
-  nav {
+  div.wrapper-nav nav {
+    display: none;
+  }
+  div.wrapper-nav.scrolling {
     display: none;
   }
   nav.mobile {
@@ -336,17 +364,17 @@ aside ul a i {
 }
 
 @media (orientation: landscape) and (max-width: 1024px) {
-  nav {
+  div.wrapper-nav nav {
     width: 10vw;
     left: 85%;
   }
-  nav ul a {
+  div.wrapper-nav nav ul a {
     line-height: 55px;
   }
-  nav ul a i.start {
+  div.wrapper-nav nav ul a i.start {
     line-height: 55px;
   }
-  nav ul li:nth-of-type(1) a {
+  div.wrapper-nav nav ul li:nth-of-type(1) a {
     height: 55px;
   }
 }
@@ -1275,7 +1303,7 @@ section.contact h1.title1::after {
           transform: translateX(-50%);
   width: 35%;
   margin: 0 auto;
-  border-bottom: 2px solid #F0EDE1;
+  border-bottom: 1px solid #F0EDE1;
 }
 
 section.contact .wrap {

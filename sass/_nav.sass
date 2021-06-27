@@ -1,13 +1,24 @@
 /*! nav */
-nav
-    display: block
-    +position-absolute(absolute, 93%, 90%)
-    width: 7vw
-    background-color: $medium-beige
-    z-index: 1
-    +menu-content-desktop()
-nav.scrolling
-    +position-absolute(fixed, 10%, 90%)
+div.wrapper-nav
+    width: 100%
+    height: 100vh
+    position: absolute
+    & nav
+        display: block
+        +position-absolute(absolute, -6.8%, 90%)
+        width: 7vw
+        background-color: $medium-beige
+        z-index: 1
+        +menu-content-desktop()
+        transition: 1s
+        & ul li:nth-of-type(1) a.show
+            transform: rotate(180deg)
+        &.scrolling
+            +position-absolute(fixed, 0, 90%)
+        & ul li.active
+            background-color: $light-beige
+            &:hover
+                background-color: $medium-beige
 
 nav.mobile
     display: none
@@ -33,27 +44,33 @@ aside
     transition: .5s
     +menu-content-mobile()
     &.show
+        left: 0
 
 /*! media queries for nav */
 @media (max-width: 1200px)
-    nav
-        width: 10vw
-        left: 85%
-        & ul a
-            line-height: 95px
-            & i.start
+    div.wrapper-nav
+        nav
+            width: 10vw
+            left: 85%
+            & ul a
                 line-height: 95px
-        & ul li:nth-of-type(1) a
-            height: 95px
+                & i.start
+                    line-height: 95px
+            & ul li:nth-of-type(1) a
+                height: 95px
 
 @media (orientation: portrait) and (max-width: 1024px)
-    nav
-        width: 15vw
-        left: 80%
+    div.wrapper-nav
+        nav
+            width: 15vw
+            left: 80%
 
 @media (max-width: 832px)
-    nav
-        display: none
+    div.wrapper-nav
+        nav
+            display: none
+        &.scrolling
+            display: none
     nav.mobile
         display: block
 
@@ -80,12 +97,13 @@ aside
             color: $medium-beige
 
 @media (orientation: landscape) and (max-width: 1024px)
-    nav
-        width: 10vw
-        left: 85%
-        & ul a
-            line-height: 55px
-            & i.start
+    div.wrapper-nav
+        nav
+            width: 10vw
+            left: 85%
+            & ul a
                 line-height: 55px
-        & ul li:nth-of-type(1) a
-            height: 55px
+                & i.start
+                    line-height: 55px
+            & ul li:nth-of-type(1) a
+                height: 55px
