@@ -234,7 +234,8 @@ nav.mobile {
 nav.mobile .menu-mobile {
   font-size: 3em;
   color: #47474A;
-  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 nav.mobile .menu-mobile.show {
@@ -297,6 +298,7 @@ aside ul a i {
 
 aside.show {
   left: 0;
+  position: fixed;
 }
 
 /*! media queries for nav */
@@ -369,7 +371,7 @@ aside.show {
 @media (orientation: landscape) and (max-width: 1024px) {
   div.wrapper-nav nav {
     width: 10vw;
-    left: 85%;
+    left: 90%;
   }
   div.wrapper-nav nav ul a {
     line-height: 55px;

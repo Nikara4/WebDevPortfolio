@@ -58,3 +58,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 //end
+
+//mobile menu showing up function
+$('nav.mobile').on("click", function(){
+  $('aside').toggleClass('show');
+  $('.menu-mobile').toggleClass('show');
+});

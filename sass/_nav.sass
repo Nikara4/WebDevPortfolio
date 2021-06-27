@@ -30,7 +30,7 @@ nav.mobile
     & .menu-mobile
         font-size: 3em
         color: $dark-beige
-        cursor: pointer
+        transition: .5s
         &.show
             color: $light-beige
 
@@ -47,6 +47,7 @@ aside
     +menu-content-mobile()
     &.show
         left: 0
+        position: fixed
 
 /*! media queries for nav */
 @media (max-width: 1200px)
@@ -102,7 +103,7 @@ aside
     div.wrapper-nav
         nav
             width: 10vw
-            left: 85%
+            left: 90%
             & ul a
                 line-height: 55px
                 & i.start
