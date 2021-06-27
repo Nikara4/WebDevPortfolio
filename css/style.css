@@ -246,7 +246,7 @@ nav.mobile .menu-mobile.show {
 
 aside {
   z-index: 1;
-  position: absolute;
+  position: fixed;
   left: -70vw;
   top: 0;
   padding: 10vh 7vw;
