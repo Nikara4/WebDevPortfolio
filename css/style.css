@@ -78,18 +78,12 @@ header {
   position: relative;
   min-width: 320px;
   max-width: 1920px;
-  left: 100vw;
-  -webkit-transition: 2s;
-  transition: 2s;
+  left: 0;
   background-image: url("../img/headerphoto.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
-
-header.active {
-  left: 0;
 }
 
 /*! media queries for header */

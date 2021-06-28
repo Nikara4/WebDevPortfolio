@@ -1,4 +1,4 @@
-$(document).ready(() => $('header, div.welcome').addClass('active'));
+$(document).ready(() => $('div.welcome').addClass('active'));
 
 //extracting objects from html
 const $navMenu = $('nav');
@@ -64,7 +64,7 @@ $('nav.mobile, aside a').on("click", () => $('aside, .menu-mobile').toggleClass(
 
    if (scrollValue < sectionOffset) {
     $header.css({
-     'opacity': 1 - scrollValue / headerHeight,
+     'opacity': 1 - scrollValue / (headerHeight * 2),
      'filter': 'grayscale(' + 2 * scrollValue / headerHeight + ')'
     })
    }
