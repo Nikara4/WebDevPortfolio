@@ -26,18 +26,18 @@ function scrollThroughPage() {
         $navAsideArrow.removeClass('show');
     }
 
-    if (scrollValue < heightNav1) {
+    if (scrollValue < heightNav1 - $navArrowHeight) {
         $("li").removeClass("active");
-      } else if (scrollValue < heightNav2) {
+      } else if (scrollValue < heightNav2 - $navArrowHeight) {
         $("li").not(".profile").removeClass("active");
         $(".profile").addClass("active");
-      } else if (scrollValue < heightNav3) {
+      } else if (scrollValue < heightNav3 - $navArrowHeight) {
         $("li").not(".skills").removeClass("active");
         $(".skills").addClass("active");
-      } else if (scrollValue < heightNav4) {
+      } else if (scrollValue < heightNav4 - $navArrowHeight) {
         $("li").not(".projects").removeClass("active");
         $(".projects").addClass("active");
-      } else if (scrollValue < heightNav5) {
+      } else if (scrollValue < heightNav5 - $navArrowHeight) {
         $("li").not(".hobby").removeClass("active");
         $(".hobby").addClass("active");
       } else {
