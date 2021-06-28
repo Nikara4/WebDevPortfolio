@@ -11,21 +11,12 @@ body {
 }
 
 /*! header */
-header {
-  margin: 0 auto;
-  height: 100vh;
+.wrapper-header {
+  overflow: hidden;
   position: relative;
-  min-width: 320px;
-  max-width: 1920px;
-  background-image: url("../img/headerphoto.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  font-family: "Montserrat", arial, sans-serif;
 }
 
-header .welcome {
+.wrapper-header .welcome {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,16 +41,23 @@ header .welcome {
       flex-shrink: 0;
   position: absolute;
   top: 55%;
-  left: 0;
+  left: -47vw;
+  -webkit-transition: 2s;
+  transition: 2s;
   z-index: 1;
   padding: 2vh 5vw 2vh 0;
   background-color: #ACA18C;
   height: 20vh;
   width: 47vw;
   color: #F0EDE1;
+  font-family: "Montserrat", arial, sans-serif;
 }
 
-header h1 {
+.wrapper-header .welcome.active {
+  left: 0;
+}
+
+.wrapper-header .welcome h1 {
   font-weight: 100;
   padding-left: 2vw;
   font-size: 7vh;
@@ -67,16 +65,37 @@ header h1 {
   padding-bottom: 0.5vh;
 }
 
-header h2 {
+.wrapper-header .welcome h2 {
   font-weight: 100;
   padding-left: 2vw;
   font-size: 4.5vh;
   padding-top: 1vh;
 }
 
+header {
+  margin: 0 auto;
+  height: 100vh;
+  position: relative;
+  min-width: 320px;
+  max-width: 1920px;
+  left: 100vw;
+  -webkit-transition: 2s;
+  transition: 2s;
+  background-image: url("../img/headerphoto.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header.active {
+  left: 0;
+}
+
 /*! media queries for header */
 @media (orientation: portrait) and (max-width: 1024px) {
   header {
+    left: 0vw;
     background-image: url("../img/headerphoto-tel.jpg");
   }
   header .welcome {
@@ -87,6 +106,7 @@ header h2 {
     height: 15vh;
     width: 100%;
     text-align: center;
+    left: 0;
   }
   header h1 {
     font-size: 6em;

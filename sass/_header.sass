@@ -1,40 +1,52 @@
 /*! header */
-header
-    +page-center()
-    height: 100vh
+.wrapper-header
+    overflow: hidden
     position: relative
-    min-width: 320px
-    max-width: 1920px
-    background-image: url('../img/headerphoto.jpg')
-    background-size: cover
-    background-position: $bgc-position
-    background-repeat: $bgc-repeat
-    background-attachment: fixed
-    font-family: $montserrat-font
     & .welcome
         +flexbox(column, nowrap, 0)
         justify-content: center
         flex-shrink: 0
-        +position-absolute(absolute, 55%, 0)
+        +position-absolute(absolute, 55%, -47vw)
+        transition: 2s
         z-index: 1
         padding: 2vh 5vw 2vh 0
         background-color: $medium-beige
         height: 20vh
         width: 47vw
         color: $light-beige
-    & h1
-        +header-titles()
-        font-size: 7vh
-        border-bottom: 1px solid $light-beige
-        padding-bottom: 0.5vh
-    & h2
-        +header-titles()
-        font-size: 4.5vh
-        padding-top: 1vh
+        font-family: $montserrat-font
+        &.active
+            left: 0
+        & h1
+            +header-titles()
+            font-size: 7vh
+            border-bottom: 1px solid $light-beige
+            padding-bottom: 0.5vh
+        & h2
+            +header-titles()
+            font-size: 4.5vh
+            padding-top: 1vh
+
+header
+    +page-center()
+    height: 100vh
+    position: relative
+    min-width: 320px
+    max-width: 1920px
+    left: 100vw
+    transition: 2s
+    background-image: url('../img/headerphoto.jpg')
+    background-size: cover
+    background-position: $bgc-position
+    background-repeat: $bgc-repeat
+    background-attachment: fixed
+    &.active
+        left: 0
 
 /*! media queries for header */
 @media (orientation: portrait) and (max-width: 1024px)
     header
+        left: 0vw
         background-image: url('../img/headerphoto-tel.jpg')
         & .welcome
             align-content: stretch
@@ -43,6 +55,7 @@ header
             height: 15vh
             width: 100%
             +text-center()
+            left: 0
         & h1
             font-size: 6em
         & h2

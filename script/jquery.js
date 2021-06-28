@@ -1,3 +1,5 @@
+$(document).ready(() => $('header, div.welcome').addClass('active'));
+
 //extracting objects from html
 const $navMenu = $('nav');
 const $navAsideArrow = $('div.wrapper-nav nav ul li:nth-of-type(1) a');
@@ -47,19 +49,23 @@ function scrollThroughPage() {
 $(window).on("scroll", scrollThroughPage);
 //end
 
-//links from menu point smothly to the section
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-      e.preventDefault();
-
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-      });
-  });
-});
-//end
-
 //mobile menu showing up function
-$('nav.mobile, aside a').on("click", function(){
-  $('aside, .menu-mobile').toggleClass('show');
-});
+$('nav.mobile, aside a').on("click", () => $('aside, .menu-mobile').toggleClass('show'));
+
+//header effect while scrolling down
+  const $doc = $(document);
+  const $header = $('header');
+  const $about = $('.profile');
+
+  $doc.on("scroll", function () {
+    const scrollValue = $(window).scrollTop();
+    const sectionOffset = $about.offset().top;
+    const headerHeight = $header.outerHeight();
+
+   if (scrollValue < sectionOffset) {
+    $header.css({
+     'opacity': 1 - scrollValue / headerHeight,
+     'filter': 'grayscale(' + 2 * scrollValue / headerHeight + ')'
+    })
+   }
+  })
