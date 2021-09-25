@@ -834,6 +834,11 @@ div.section-wrap .skills .image:nth-of-type(7), div.section-wrap .skills .image:
   width: 40%;
 }
 
+div.section-wrap .skills .gray {
+  -webkit-filter: grayscale(0.9);
+          filter: grayscale(0.9);
+}
+
 @media (orientation: portrait) and (max-width: 1024px) {
   div.section-wrap .skills {
     max-width: 75%;
@@ -1212,7 +1217,7 @@ section.hobby .wrapHobby .item:nth-of-type(2) {
 }
 
 section.hobby .wrapHobby .item:nth-of-type(3) {
-  background-image: url("../img/hobby3.jpg");
+  background-image: url("../img/korea1.jpg");
 }
 
 section.hobby .wrapHobby .item:nth-of-type(4) {
