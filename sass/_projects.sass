@@ -1,21 +1,34 @@
 section.projects
-    +flexbox(row, wrap, 1)
+    +flexbox(row, wrap, 0)
     max-width: 63vw
-    +text-center()
+    // +text-center()
     margin: 7vh auto
+    & .icon
+        width: 20%
+        margin-top: 3vh
+        & img
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
     & .project
-        width: 33%
-        margin-top: 6vh
+        width: 80%
+        margin-top: 3vh
         & h3
-            margin-bottom: 3vh
+            margin-bottom: 2vh
             font-family: $montserrat-font
             font-weight: 400
-            font-size: 2.4em
+            font-size: 2.2em
             text-transform: uppercase
             color: $medium-beige
+            & a
+                padding-left: 1.4vw
+                color: $light-beige
+                text-decoration: none
+                transition: 0.3s
+                color: $medium-beige
+                &:hover
+                    color: $dark-beige
         & p
             padding: 0 2vw 0 2vw
-            font-size: 1.6em
+            font-size: 1.4em
             font-weight: 300
             color: $medium-beige
         & img
