@@ -47,12 +47,16 @@ section.projects
     section.projects
         max-width: 75vw
         margin: 5%
+        & .icon
+            width: 25%
         & .project
-            margin-top: 4vh
+            width: 65%
+            margin-top: 3vh
+            align-self: center
             & h3
-                font-size: 3em
-            & p
                 font-size: 2em
+            & p
+                font-size: 1.5em
             & img
                 width: 100%
                 margin-bottom: 2vh
@@ -79,12 +83,16 @@ section.projects
             &::after
             +h1-title1-underscore-media()
 
-@media (orientation: landscape) and (max-width: 1024px)
+@media (orientation: landscape) and (max-width: 1470px)
     section.projects
         max-width: 70vw
         margin: 5%
+        & .icon
+            width: 25%
         & .project
-            margin-top: 4vh
+            width: 65%
+            margin-top: 3vh
+            align-self: center
             & h3
                 font-size: 2.5em
             & p
@@ -93,6 +101,21 @@ section.projects
             & img
                 width: 90%
                 margin-bottom: 2vh
+        & h1.title1
+            margin-bottom: 3vh
+            &::after
+                +h1-title1-underscore-media()
+
+@media (orientation: landscape) and (max-width: 1024px)
+    section.projects .project
+        & h3
+            font-size: 2em
+        & p
+            font-size: 1.3em
+            padding-bottom: 5vh
+        & img
+            width: 90%
+            margin-bottom: 2vh
         & h1.title1
             margin-bottom: 3vh
             &::after

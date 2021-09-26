@@ -42,7 +42,7 @@ header
 
 /*! media queries for header */
 @media (orientation: portrait) and (max-width: 1024px)
-    header
+    .wrapper-header
         left: 0vw
         background-image: url('../img/headerphoto-tel.jpg')
         & .welcome
@@ -53,22 +53,22 @@ header
             width: 100%
             +text-center()
             left: 0
-        & h1
-            font-size: 6em
-        & h2
-            font-size: 3.5em
+            & h1
+                font-size: 6em
+            & h2
+                font-size: 3.5em
 
 @media (orientation: portrait) and (max-width: 414px)
-    header
+    .wrapper-header
         & .welcome
             padding: 2.5%
-        & h1
-            font-size: 3em
-        & h2
-            font-size: 2em
+            & h1
+                font-size: 3.3em
+            & h2
+                font-size: 2.5em
 
 @media (orientation: landscape) and (max-width: 1416px)
-    header .welcome
+    .wrapper-header .welcome
         width: 65%
         & h1
             font-size: 5.5em
@@ -76,7 +76,7 @@ header
             font-size: 3.5em
 
 @media (orientation: landscape) and (max-width: 832px)
-    header .welcome
+    .wrapper-header .welcome
         width: 65%
         & h1
             font-size: 3em
